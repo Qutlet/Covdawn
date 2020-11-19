@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covdown" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".data.RejestracjaActivity"/>
+        <activity android:name=".data.LoginActivity"/>
+<!--        <activity-->
+<!--            android:name=".MainActivity2"-->
+<!--            android:label="@string/title_activity_main2" >-->
+<!--        </activity>-->
+        <activity
+            android:name=".covdownMain"
+            android:label="@string/title_activity_covdown_main" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.oddech.OddechFragment_rece"
+            android:label="@string/title_activity_covdown_main" />
+        <activity
+            android:name=".ui.oddech.OddechFragment_ciezar"
+            android:label="@string/title_activity_covdown_main" />
+        <activity
+            android:name=".ui.oddech.OddechFragment_butelka"
+            android:label="@string/title_activity_covdown_main" />
+        <activity
+            android:name=".ui.oddech.OddechFragment_zasznurowaneUsta"
+            android:label="@string/title_activity_covdown_main" />
+        <activity
+            android:name=".ui.oddech.OddechFragment_uspokujsie"
+            android:label="@string/title_activity_covdown_main" />
+    </application>
+
+</manifest>

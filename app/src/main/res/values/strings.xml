@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Covdown</string>
+    <string name="title_activity_covdown_main">Covdown</string>
+    <string name="title_dla_ciebie">Dla Ciebie</string>
+    <string name="title_oddech">Oddech</string>
+    <string name="title_muzyczka">Muzyczka</string>
+    <string name="title_cwieczenia">Cwiczenia</string>
+    <string name="title_wiecej">Wiecej</string>
+    <string name="ustatytul">Zaszyte usta</string>
+    <string name="ustaopisk1">Powoli wciągnij powietrze przez nos, aż do całkowitego napełnienia płuc.</string>
+    <string name="ustaopisk2">Miarowo wypuść powietrze przez zwiężone usta.</string>
+
+    <string name="butelkatytul">Ćwiczenie z butelką</string>
+    <string name="butelkaopisk1">Weź długą słomkę i butelkę napełnioną do połowy wodą i postaw ją przed sobą na stole.</string>
+    <string name="butelkaopisk2">Wdmuchuj powietrze przez słomkę jak najdłużej możesz.</string>
+
+    <string name="ciezartytul">Ćwiczenie z ciężarem</string>
+    <string name="ciezaropisk1">Połóż się na podłodze i umieść na brzuchu niewielki ciężar np. książkę.</string>
+    <string name="ciezaropisk2">Wykonuj wdech unosząc brzuch do góry, a następnie wydech aktywnie wziągając mięśnie brzucha.</string>
+
+    <string name="recetytul">Ćwiczenie z podnoszeniem rąk</string>
+    <string name="receopisk1">Usiądź swobonie na krześle  i opuść ręce swobodnie wzdłuż ciała.</string>
+    <string name="receopisk2">Podnieś wyprostowane ręce nad głowę robiąc wdech i opuść je powoli wydmuchując powietrze.</string>
+
+    <string name="uspokojsietytul">Ćwiczenie na uspokojenie</string>
+    <string name="uspokojsieopisk1">Usiądź swobonie, weź powoli glęboki wdech nosem i policz do pięciu.</string>
+    <string name="uspokojsieopisk2">Wypuść powietrze ustami. Powtórz wdech i wydech 7 razy.</string>
+    <string name="nastepny_krok">Nastepny Krok</string>
+    <string name="podano_bledne_dane_logowania">Podano bledne dane logowania.
+                                                Spróbuj ponownie!</string>
+    <string name="data_urodzenia">Data urodzenia</string>
+    <string name="do_odblokowania">Do Odblokowania</string>
+</resources>

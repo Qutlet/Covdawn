@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<baza>
+    <wojewodzctwo name="Lodzkie">
+        <szpital>
+            <nazwa>Wojewódzki Szpital Specjalistyczny im. Marii Skłodowskiej Curie w Zgierzu</nazwa>
+            <numer>427144500</numer>
+            <latitude>51.8591018</latitude>
+            <longitude>19.3843366,15</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Wojewódzki Specjalistyczny Szpital im. dr. Wł. Biegańskiego</nazwa>
+            <numer>422516051</numer>
+            <latitude>51.7995506</latitude>
+            <longitude>19.4347484</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Instytut Centrum Zdrowia Matki Polki</nazwa>
+            <numer>422711000</numer>
+            <latitude>51.7250012</latitude>
+            <longitude>19.4740961</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital MSWiA</nazwa>
+            <numer>426341100</numer>
+            <latitude>51.7800703</latitude>
+            <longitude>19.4918068</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Dolnoslaskie">
+        <szpital name="E1">
+            <nazwa>Wojewódzki Szpital Specjalistyczny w Legnicy</nazwa>
+            <numer>767211100</numer>
+            <latitude>51.2084145</latitude>
+            <longitude>16.2142134</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital "Miedziowego Centrum Zdrowia" S.A. w Lubinie</nazwa>
+            <numer>768460300</numer>
+            <latitude>51.4091878</latitude>
+            <longitude>16.1916072</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital im. Marciniaka przy ul. Fieldorfa we Wrocławiu</nazwa>
+            <numer>713064419</numer>
+            <latitude>51.1441542</latitude>
+            <longitude>16.9054068</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital MSWiA we Wrocławiu</nazwa>
+            <numer>717984600</numer>
+            <latitude>51.1142657</latitude>
+            <longitude>17.0096448</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Kujawsko-pomorskie">
+        <szpital name="E1">
+            <nazwa>Szpital Uniwersytecki im. dr. A. Jurasza w Bydgoszczy</nazwa>
+            <numer>525854000</numer>
+            <latitude>53.1278407</latitude>
+            <longitude>18.030037</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Powiatowy PSZOZ</nazwa>
+            <numer>523545500</numer>
+            <latitude>52.7807757</latitude>
+            <longitude>18.2608545</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Powiatowy. SPZOZ. Filia im. J. Strusia</nazwa>
+            <numer>618739000</numer>
+            <latitude>52.3897665</latitude>
+            <longitude>16.9937794</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Wojewódzki im. dr. J. Biziela SPZOZ</nazwa>
+            <numer>523655799</numer>
+            <latitude>53.1154652</latitude>
+            <longitude>18.0244831</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Lubelskie">
+        <szpital name="E1">
+            <nazwa>Szpital Powiatowy w Opolu Lubelskim</nazwa>
+            <numer>818272017</numer>
+            <latitude>51.1516112</latitude>
+            <longitude>21.9734046</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Samodzielny Publiczny Szpital Wojewódzki im. Jana Bożego w Lublinie</nazwa>
+            <numer>817402039</numer>
+            <latitude>51.2569839</latitude>
+            <longitude>22.5701269</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Wojewódzki Szpital Specjalistyczny im. Stefana Kardynała Wyszyńskiego</nazwa>
+            <numer>815374171</numer>
+            <latitude>51.2389506</latitude>
+            <longitude>22.501407</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Powiatowy im. dr. Wojciecha Oczki</nazwa>
+            <numer>815162650</numer>
+            <latitude>51.1770221</latitude>
+            <longitude>22.2907546</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Lubuskie">
+        <szpital name="E1">
+            <nazwa>Szpital Powiatowy im. dr Henryka Jordana</nazwa>
+            <numer>957552431</numer>
+            <latitude>52.4371285</latitude>
+            <longitude>15.1140839</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Powiatowy w Słubicach</nazwa>
+            <numer>957582071</numer>
+            <latitude>52.351563</latitude>
+            <longitude>14.5544365</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital im. R. Śmigielskiego w Skwierzynie</nazwa>
+            <numer>957170039</numer>
+            <latitude>52.593911</latitude>
+            <longitude>15.5043773</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Nowy Szpital w Świebodzinie</nazwa>
+            <numer>412402100</numer>
+            <latitude>52.2525198</latitude>
+            <longitude>15.5322336</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Malopolskie">
+        <szpital name="E1">
+            <nazwa>Szpital Wojewódzki im. św. Łukasza w Tarnowie</nazwa>
+            <numer>146315000</numer>
+            <latitude>50.0132558</latitude>
+            <longitude>21.031455</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Kliniczny im. dr J. Babińskiego SPZOZ w Krakowie</nazwa>
+            <numer>126524347</numer>
+            <latitude>50.004274</latitude>
+            <longitude>19.8814962</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Rejonowy w Suchej Beskidzkiej</nazwa>
+            <numer>126524347</numer>
+            <latitude>49.9992914</latitude>
+            <longitude>19.8895916</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Uniwersytecki w Krakowie </nazwa>
+            <numer>124247000</numer>
+            <latitude>50.06264</latitude>
+            <longitude>19.9498881</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Mazowieckie">
+        <szpital name="E1">
+            <nazwa>Mazowiecki Szpital Wojewódzki</nazwa>
+            <numer>256403200</numer>
+            <latitude>51.5168047</latitude>
+            <longitude>18.459364</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital im. dr. Teodora Dunina</nazwa>
+            <numer>256753800</numer>
+            <latitude>52.1537339</latitude>
+            <longitude>21.8250696</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Mazowiecki Szpital Bródnowski</nazwa>
+            <numer>223265226</numer>
+            <latitude>52.2909474</latitude>
+            <longitude>21.0423297</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Grochowski im. dr med. Rafała Masztaka sp. z o.o.</nazwa>
+            <numer>225152733</numer>
+            <latitude>52.2424149</latitude>
+            <longitude>21.0760216</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Opolskie">
+        <szpital name="E1">
+            <nazwa>Wojewódzki Szpital Specjalistyczny im. Św. Jadwigi Śląskiej</nazwa>
+            <numer>775414110</numer>
+            <latitude>50.6757697</latitude>
+            <longitude>17.9380629</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Uniwersytecki Szpital Kliniczny w Opolu</nazwa>
+            <numer>774520745</numer>
+            <latitude>50.6770936</latitude>
+            <longitude>17.9747698</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Powiatowy im. Prałata J. Glowatzkiego</nazwa>
+            <numer>774070100</numer>
+            <latitude>50.5152478</latitude>
+            <longitude>18.2892659</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>116 Szpital Wojskowy w Opolu</nazwa>
+            <numer>774172032</numer>
+            <latitude>50.6599126</latitude>
+            <longitude>17.893003</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Podkarpackie">
+        <szpital name="E1">
+            <nazwa>Wojewódzki Szpital Podkarpacki im. Jana Pawła II w Krośnie</nazwa>
+            <numer>134378000</numer>
+            <latitude>49.701868</latitude>
+            <longitude>21.7809553</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Kliniczny Szpital Wojewódzki Nr 2 im. Św. Jadwigi Królowej w Rzeszowie</nazwa>
+            <numer>178664000</numer>
+            <latitude>50.0354466</latitude>
+            <longitude>22.033351</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Wojewódzki Szpital im. św. Ojca Pio</nazwa>
+            <numer>166775000</numer>
+            <latitude>49.809074</latitude>
+            <longitude>22.7807408</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Kliniczny Szpital Wojewódzki Nr 1 im. Fryderyka Chopina w Rzeszowie</nazwa>
+            <numer>178666000</numer>
+            <latitude>50.0360449</latitude>
+            <longitude>22.0072873</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Podlaskie">
+        <szpital name="E1">
+            <nazwa>Wojewódzki Szpital Zespolony w Łomży</nazwa>
+            <numer>864733900</numer>
+            <latitude>53.1601615</latitude>
+            <longitude>22.0832792</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Wojewódzki Szpital Zespolony im. J. Śniadeckiego w Białymstoku</nazwa>
+            <numer>857488100</numer>
+            <latitude>53.1249924</latitude>
+            <longitude>23.1600699</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Kliniczny Akademii Medycznej w Białymstoku</nazwa>
+            <numer>858318000</numer>
+            <latitude>53.1241167</latitude>
+            <longitude>23.1563271</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Ogólny w Grajewie</nazwa>
+            <numer>862723271</numer>
+            <latitude>53.645815</latitude>
+            <longitude>22.4679109</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Pomorskie">
+        <szpital name="E1">
+            <nazwa>Szpital Powiatu Bytowskiego Sp. z o.o.</nazwa>
+            <numer>598228500</numer>
+            <latitude>54.178635</latitude>
+            <longitude>17.4829392</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Morski im. PCK</nazwa>
+            <numer>224800800</numer>
+            <latitude>54.4895455</latitude>
+            <longitude>18.5507925</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Powiatowe Centrum Zdrowia Sp. z o.o.</nazwa>
+            <numer>586854800</numer>
+            <latitude>54.336794</latitude>
+            <longitude>18.1956832</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Pucki sp. z o.o.</nazwa>
+            <numer>583800291</numer>
+            <latitude>54.7212345</latitude>
+            <longitude>18.4116552</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Slaskie">
+        <szpital name="E1">
+            <nazwa>Szpital Wojewódzki w Bielsku-Białej</nazwa>
+            <numer>338102000</numer>
+            <latitude>49.792853</latitude>
+            <longitude>19.0368591</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Powiatowy w Zawierciu</nazwa>
+            <numer>326740200</numer>
+            <latitude>50.4817473</latitude>
+            <longitude>19.406662</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Rejonowy im. dr Józefa Rostka</nazwa>
+            <numer>327555000</numer>
+            <latitude>50.101345</latitude>
+            <longitude>18.2012558</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Miejski w Rudzie Śląskiej</nazwa>
+            <numer>323440724</numer>
+            <latitude>50.3151289</latitude>
+            <longitude>18.8865594</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Swietokrzyskie">
+        <szpital name="E1">
+            <nazwa>Szpital Rejonowy w Chmielniku</nazwa>
+            <numer>413543023</numer>
+            <latitude>50.6180719</latitude>
+            <longitude>20.7466799</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Kielecki św. Aleksandra sp. z o.o.</nazwa>
+            <numer>413417800</numer>
+            <latitude>50.8738495</latitude>
+            <longitude>20.6359295</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Specjalistyczny św.Łukasza</nazwa>
+            <numer>413902398</numer>
+            <latitude>51.1905028</latitude>
+            <longitude>20.3901911</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Rejonowy w Sandomierzu</nazwa>
+            <numer>158323001</numer>
+            <latitude>50.6982723</latitude>
+            <longitude>21.7490884</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Warminsko-mazurskie">
+        <szpital name="E1">
+            <nazwa>Uniwersytecki Szpital Kliniczny w Olsztynie</nazwa>
+            <numer>895245350</numer>
+            <latitude>53.7725296</latitude>
+            <longitude>20.4697336</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Wojewódzki Szpital Zespolony w Elblągu</nazwa>
+            <numer>552344111</numer>
+            <latitude>54.1791782</latitude>
+            <longitude>19.4268489</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Powiatowy im. Jana Pawła II w Bartoszycach</nazwa>
+            <numer>896752350</numer>
+            <latitude>54.2587881</latitude>
+            <longitude>20.7894401</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital Powiatowy im. Jana Mikulicza</nazwa>
+            <numer>897151791</numer>
+            <latitude>53.8658434</latitude>
+            <longitude>20.955116</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Wielkopolskie">
+        <szpital name="E1">
+            <nazwa>Szpital powiatowy im. Jana Pawła II w Trzciance</nazwa>
+            <numer>673523200</numer>
+            <latitude>53.0397206</latitude>
+            <longitude>16.4611663</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Szpital Kliniczny im. Karola Jonschera Uniwersytetu Medycznego im. Karola Marcinkowskiego w Poznaniu</nazwa>
+            <numer>618491200</numer>
+            <latitude>52.4120371</latitude>
+            <longitude>16.8755908</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Szpital Wojewódzki w Poznaniu</nazwa>
+            <numer>618212200</numer>
+            <latitude>52.4396505</latitude>
+            <longitude>16.9049943</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Szpital powiatowy w Wyrzysku spółka Z O.O.</nazwa>
+            <numer>672862241</numer>
+            <latitude>53.1491138</latitude>
+            <longitude>17.2698331</longitude>
+        </szpital>
+    </wojewodzctwo>
+    <wojewodzctwo name="Zachodniopomorskie">
+        <szpital name="E1">
+            <nazwa>Szpital Miejski Im. Św. Karola Boromeusza</nazwa>
+            <numer>918806144</numer>
+            <latitude>53.4406169</latitude>
+            <longitude>14.5501693</longitude>
+        </szpital>
+        <szpital name="E2">
+            <nazwa>Samodzielny Publiczny Szpital Kliniczny nr 2 PUM</nazwa>
+            <numer>914661000</numer>
+            <latitude>53.4076578</latitude>
+            <longitude>14.5139824</longitude>
+        </szpital>
+        <szpital name="E3">
+            <nazwa>Regionalny Szpital w Kołobrzegu</nazwa>
+            <numer>943530200</numer>
+            <latitude>54.1744212</latitude>
+            <longitude>15.5656736</longitude>
+        </szpital>
+        <szpital name="E4">
+            <nazwa>Samodzielny Publiczny Wojewódzki Szpital Zespolony w Szczecinie</nazwa>
+            <numer>918139000</numer>
+            <latitude>53.452674</latitude>
+            <longitude>14.5242313</longitude>
+        </szpital>
+    </wojewodzctwo>
+</baza>

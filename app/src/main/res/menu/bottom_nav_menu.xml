@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/oddechFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_oddech" />
+    <item
+        android:id="@+id/dlaCiebieFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_dla_ciebie" />
+    <item
+        android:id="@+id/doOdblokowaniaFragment"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/do_odblokowania"
+        />
+
+</menu>

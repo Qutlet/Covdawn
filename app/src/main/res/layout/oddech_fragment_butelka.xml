@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oddechBckZB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="60dp"
+    android:background="@drawable/duzy"
+    tools:context=".ui.oddech.OddechFragment_butelka">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonButleka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="162dp"
+            android:text="@string/nastepny_krok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewButleka" />
+
+        <TextView
+            android:id="@+id/textViewButleka1"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/secular_one"
+            android:text="Zasznurowane Usta"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewButlka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewButlka"
+            android:layout_width="255dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/ic_dashboard_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewButleka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewButleka1"
+            app:srcCompat="@drawable/baza" />
+
+        <TextView
+            android:id="@+id/textViewButleka"
+            android:layout_width="147dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="132dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewButlka" />
+
+        <ImageButton
+            android:id="@+id/buttonButBack"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="344dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

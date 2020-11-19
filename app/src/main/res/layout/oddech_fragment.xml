@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oddechBck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="60dp"
+    tools:context=".ui.oddech.OddechFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/zasznurowaneUsta"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_dashboard_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/cwiczenieZButelka"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/oddychanieZCiezarem"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/receGoraDol"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_dashboard_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/uspokajajace"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_dashboard_black_24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
