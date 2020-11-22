@@ -1,19 +1,20 @@
 package com.example.covdown.data;
 
-import android.content.ClipData;
 import android.os.StrictMode;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class BazaDanych {
     private static BazaDanych self = new BazaDanych();
     public static BazaDanych get() {return self;}
     Connection connection = null;
+
+    public Connection getConnection() {
+        return connection;
+    }
 
     private void connect() {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
