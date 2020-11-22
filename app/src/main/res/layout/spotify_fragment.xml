@@ -7,41 +7,41 @@
 <!--    android:layout_height="match_parent"-->
 <!--    tools:context=".ui.dlaCiebie.DlaCiebieFragment">-->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainFRAG"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dlaCiebie.DlaCiebieFragment"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/secular_one"
-            android:text="Obecnie znajdujesz się w: "
-            android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/local"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/secular_one"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:typeface="normal" />
+    android:orientation="vertical"
+    tools:context=".ui.spotify.SpotifyFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="393dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dopisac" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tylko co" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cos napewno" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Nazwa Szpitala" />
+                            android:text="playlista" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -73,14 +73,14 @@
 
                         <TextView
                             android:id="@+id/numerTelefonuSzpitala1"
-                            android:layout_width="106dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="center"
                             android:text="Numer"
                             android:textAlignment="viewStart" />
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/numerbtn1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
 
                         <ImageButton
                             android:id="@+id/imgszpitala1"
-                            android:layout_width="50dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:src="@drawable/ic_home_black_24dp" />
@@ -296,21 +296,6 @@
         </LinearLayout>
     </ScrollView>
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/secular_one"
-            android:text="Numer sanepidu dla twojego wojwództwa"
-            android:textAlignment="center"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/sanepid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-    </LinearLayout>
+</FrameLayout>
 
 <!--</FrameLayout>-->
