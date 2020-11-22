@@ -15,8 +15,14 @@
     <string name="butelkaopisk2">Wdmuchuj powietrze przez słomkę jak najdłużej możesz.</string>
 
     <string name="ciezartytul">Ćwiczenie z ciężarem</string>
-    <string name="ciezaropisk1">Połóż się na podłodze i umieść na brzuchu niewielki ciężar np. książkę.</string>
-    <string name="ciezaropisk2">Wykonuj wdech unosząc brzuch do góry, a następnie wydech aktywnie wziągając mięśnie brzucha.</string>
+    <string name="ciezaropisk1">Połóż się na podłodze z ugiętymi nogami. Jedną rękę połóż na brzuchu, a drugą na klatce piersiowej.</string>
+    <string name="ciezaropisk2">Wykonuj wdech nosem unosząc brzuch do góry, a następnie wydech aktywnie wziągając mięśnie brzucha. Powtórz 3 razy.</string>
+    <string name="ciezar2opisk1">Połóż się nie plecach z ugiętymi nogami i umieść na brzuchu pudełko zapałek zamiast ręki. Drugą rękę połóż na klatce piersiowej.</string>
+    <string name="ciezar2opisk2">Zrób wdech nosem, tak, żeby uniósł się jedynie brzuch z pudełkiem zapałek. Powtórz 3 razy.</string>
+    <string name="ciezar3opisk1">Połóż się nie plecach z ugiętymi nogami i umieść na brzuchu niewielki ciężar, np. książkę.</string>
+    <string name="ciezar3opisk2">Zrób wdech nosem, tak,aby książka uniosła się do góry. Powtórz 3 razy.</string>
+    <string name="ciezar4opisk1">Połóż się na plecach z rękami skrzyżowanymi za głową i ugiętymi nogami.</string>
+    <string name="ciezar4opisk2">Zrób wdech nosem, tak, żeby podniósł się brzuch, a potem wydech ustami – brzuch wtedy będzie opadał. Powtórz 3 razy</string>
 
     <string name="recetytul">Ćwiczenie z podnoszeniem rąk</string>
     <string name="receopisk1">Usiądź swobonie na krześle  i opuść ręce swobodnie wzdłuż ciała.</string>
