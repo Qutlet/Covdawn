@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:background="@drawable/duzy"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/lvl1"
+        android:id="@+id/lvl1_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="poziom 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRece1"
+        app:layout_constraintVertical_bias="0.039" />
 
     <Button
-        android:id="@+id/lvl2"
+        android:id="@+id/lvl2_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Poziom 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toEndOf="@+id/lvl1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/lvl1_r"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRece1"
+        app:layout_constraintVertical_bias="0.037" />
 
     <TextView
-        android:id="@+id/textViewCiezar9"
+        android:id="@+id/textViewRece1"
         android:layout_width="325dp"
         android:layout_height="50dp"
-        android:text="Ćwiczenia z ciezarem"
+        android:text="Ćwiczenia z rękami"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/lvl1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
         tools:textAlignment="center" />
 
     <ImageButton
-        android:id="@+id/lvlback"
+        android:id="@+id/lvlback_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,27 +57,27 @@
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <Button
-        android:id="@+id/lvl3"
+        android:id="@+id/lvl3_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Poziom 3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lvl1"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintTop_toBottomOf="@+id/lvl1_r"
+        app:layout_constraintVertical_bias="0.091" />
 
     <Button
-        android:id="@+id/lvl4"
+        android:id="@+id/lvl4_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Poziom 4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toEndOf="@+id/lvl3"
-        app:layout_constraintTop_toBottomOf="@+id/lvl2"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/lvl3_r"
+        app:layout_constraintTop_toBottomOf="@+id/lvl2_r"
+        app:layout_constraintVertical_bias="0.093" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

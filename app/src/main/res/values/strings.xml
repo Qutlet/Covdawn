@@ -10,9 +10,15 @@
     <string name="ustaopisk1">Powoli wciągnij powietrze przez nos, aż do całkowitego napełnienia płuc.</string>
     <string name="ustaopisk2">Miarowo wypuść powietrze przez zwiężone usta.</string>
 
-    <string name="butelkatytul">Ćwiczenie z butelką</string>
+    <string name="butelkatytul">Ćwiczenie różne</string>
     <string name="butelkaopisk1">Weź długą słomkę i butelkę napełnioną do połowy wodą i postaw ją przed sobą na stole.</string>
     <string name="butelkaopisk2">Wdmuchuj powietrze przez słomkę jak najdłużej możesz.</string>
+    <string name="butelka2opisk1">  </string>
+    <string name="butelka2opisk2">  </string>
+    <string name="butelka3opisk1">  </string>
+    <string name="butelka3opisk2">  </string>
+    <string name="butelka4opisk1">  </string>
+    <string name="butelka4opisk2">  </string>
 
     <string name="ciezartytul">Ćwiczenie z ciężarem</string>
     <string name="ciezaropisk1">Połóż się na podłodze z ugiętymi nogami. Jedną rękę połóż na brzuchu, a drugą na klatce piersiowej.</string>
@@ -27,6 +33,12 @@
     <string name="recetytul">Ćwiczenie z podnoszeniem rąk</string>
     <string name="receopisk1">Usiądź swobonie na krześle  i opuść ręce swobodnie wzdłuż ciała.</string>
     <string name="receopisk2">Podnieś wyprostowane ręce nad głowę robiąc wdech i opuść je powoli wydmuchując powietrze.</string>
+    <string name="rece2opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami wzdłuż tułowia.</string>
+    <string name="rece2opisk2">Weź wdech i wznieś wyprotowane ręce do góry do pionu, a następnie wypuść powietrze wraz z opuszczeniem rąk.</string>
+    <string name="rece3opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami wzdłuż tułowia.</string>
+    <string name="rece3opisk2">Weź wdech, wznieś wyprotowane ręce i połóż je za głową. Następnie wypuść powietrze i opuść ręce.</string>
+    <string name="rece4opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami pod kątem 90 stopni.Weź wdech z uwypukleniem klatki piersiowej i brzucha.</string>
+    <string name="rece4opisk2">Zrób wydech ze skrętem tułowia w lewo, przenieś prawą rękę przed sobą, aż do zetknięcia z lewą. Przy kolejnym wydechu wykonać skręt w przeciwną stronę.</string>
 
     <string name="uspokojsietytul">Ćwiczenie na uspokojenie</string>
     <string name="uspokojsieopisk1">Usiądź swobonie, weź powoli glęboki wdech nosem i policz do pięciu.</string>

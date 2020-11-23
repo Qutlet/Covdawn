@@ -40,7 +40,7 @@
         android:layout_marginStart="161dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="44dp"
-        android:text="Button"
+        android:text="Zaloguj"
         app:layout_constraintBottom_toTopOf="@+id/errorLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
