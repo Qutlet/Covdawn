@@ -65,12 +65,12 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
             startActivity(cwiczenieZButelka);
         }
         if (v.getId() == R.id.oddychanieZCiezarem){
-            if (odblkowoane.find("C03")) {
+            //if (odblkowoane.find("C03")) {
                 Intent oddychanieZCiezarem = new Intent(getContext(), OddechFragment_ciezar.class);
                 startActivity(oddychanieZCiezarem);
-            }else {
-                System.out.println("Nie posiadasz tego elementu");
-            }
+           // }else {
+              //  System.out.println("Nie posiadasz tego elementu");
+           // }
         }
         if (v.getId() == R.id.receGoraDol){
             System.out.println(odblkowoane.toString());

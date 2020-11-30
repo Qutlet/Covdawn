@@ -14,6 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.oddech.Butelka_poziomy"></activity>
+        <activity android:name=".ui.oddech.Rece_poziomy" />
+        <activity android:name=".ui.oddech.Ciezar_poziomy" />
         <activity android:name=".ui.muzyka.MuzykaActivity"></activity>
         <activity android:name=".ui.muzyka.muzyka" />
         <activity android:name=".data.RejestracjaActivity" />

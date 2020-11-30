@@ -1,6 +1,7 @@
 package com.example.covdown.ui.oddech;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,28 +19,51 @@ public class OddechFragment_rece extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.oddech_fragment_rece);
-
-        TextView title = findViewById(R.id.textViewRece);
+        setContentView(R.layout.poziomy_rece);
+        TextView title = findViewById(R.id.textViewRece1);
         title.setText(R.string.recetytul);
-        final ImageView ilustracjaKroku = findViewById(R.id.imageViewRece);
-        ilustracjaKroku.setImageResource(R.drawable.rence_1);
-        final TextView opis = findViewById(R.id.textViewrece3);
-        opis.setText(R.string.receopisk1);
-        Button krok = findViewById(R.id.buttonRece);
-        krok.setOnClickListener(new View.OnClickListener() {
+        Button lvl1 = findViewById(R.id.lvl1_r);
+        lvl1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opis.setText(R.string.receopisk2);
-                ilustracjaKroku.setImageResource(R.drawable.rence_2);
+                Intent cwicznenie1 = new Intent(getApplicationContext(), Rece_poziomy.class);
+                cwicznenie1.putExtra("poziom",1);
+                startActivity(cwicznenie1);
             }
         });
-        ImageButton cofnij = findViewById(R.id.buttonReceBack);
+        Button lvl2 = findViewById(R.id.lvl2_r);
+        lvl2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cwicznenie1 = new Intent(getApplicationContext(), Rece_poziomy.class);
+                cwicznenie1.putExtra("poziom",2);
+                startActivity(cwicznenie1);
+            }
+
+        });
+        Button lvl3 = findViewById(R.id.lvl3_r);
+        lvl3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cwicznenie1 = new Intent(getApplicationContext(), Rece_poziomy.class);
+                cwicznenie1.putExtra("poziom",3);
+                startActivity(cwicznenie1);
+            }
+
+        });
+        Button lvl4 = findViewById(R.id.lvl4_r);
+        lvl4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cwicznenie1 = new Intent(getApplicationContext(), Rece_poziomy.class);
+                cwicznenie1.putExtra("poziom",4);
+                startActivity(cwicznenie1);
+            }
+
+        });
+        ImageButton cofnij = findViewById(R.id.lvlback_r);
         cofnij.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+            public void onClick(View v) { finish(); }});
     }
 }
