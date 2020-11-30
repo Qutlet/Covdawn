@@ -6,10 +6,10 @@
     app:startDestination="@id/oddechFragment">
 
     <fragment
-        android:id="@+id/dlaCiebieFragment"
-        android:name="com.example.covdown.ui.dlaCiebie.DlaCiebieFragment"
-        android:label="dla_ciebie_fragment"
-        tools:layout="@layout/dla_ciebie_fragment" />
+        android:id="@+id/muzuczkaFragment"
+        android:name="com.example.covdown.ui.spotify.SpotifyFragment"
+        android:label="muzuczkaFragment"
+        tools:layout="@layout/spotify_fragment" />
     <fragment
         android:id="@+id/oddechFragment"
         android:name="com.example.covdown.ui.oddech.OddechFragment"

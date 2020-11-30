@@ -1,19 +1,22 @@
 package com.example.covdown.data;
 
-import android.content.ClipData;
 import android.os.StrictMode;
-
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLData;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class BazaDanych {
     private static BazaDanych self = new BazaDanych();
     public static BazaDanych get() {return self;}
     Connection connection = null;
+
+    public Connection getConnection() {
+        return connection;
+    }
 
     private void connect() {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -33,11 +36,16 @@ public class BazaDanych {
         boolean powodzenie = checkUserRejestracji(nazwa);
         if (!powodzenie){
             connect();
-            String query = "insert into Uzytkownicy (nazwa_uzytkownika,haslo,data) VALUES (?,?,?);";
+            String query = "insert into Uzytkownicy (nazwa_uzytkownika,haslo,data,punkty,itemki,powtorzenia,ostatniaData,ciag) VALUES (?,?,?,?,?,?,?,?);";
             try (PreparedStatement stsm = connection.prepareStatement(query) ){
                 stsm.setString(1,nazwa);
                 stsm.setString(2,haslo);
                 stsm.setString(3,data);
+                stsm.setInt(4,0);
+                stsm.setString(5,"");
+                stsm.setString(6,"");
+                stsm.setDate(7,new Date(new java.util.Date().getTime()));
+                stsm.setInt(8,0);
                 stsm.execute();
             }
             catch (SQLException e){
@@ -110,6 +118,25 @@ public class BazaDanych {
             System.err.println("Blad ustawienia punktow dla uzytkownika");
         }
         disconnect();
+    }
+
+    public boolean checkPoints(double value){
+        connect();
+        int points =0;
+        String query = "select punkty from Uzytkownicy where nazwa_uzytkownika = '"+user+"'";
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            ResultSet resultSet =statement.executeQuery();
+            while (resultSet.next()){
+                points = resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            System.err.println("Blad pobrania punktow dla uzytkownika");
+        }
+        disconnect();
+        if (value <= points){
+            return true;
+        }
+        return false;
     }
 
     public void disconnect() {
