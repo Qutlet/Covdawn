@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/oddechFragment">
-
     <fragment
-        android:id="@+id/dlaCiebieFragment"
-        android:name="com.example.covdown.ui.dlaCiebie.DlaCiebieFragment"
-        android:label="dla_ciebie_fragment"
-        tools:layout="@layout/dla_ciebie_fragment" />
+        android:id="@+id/muzyczkaFragment"
+        android:name="com.example.covdown.ui.muzyka.MuzykaFragment"
+        android:label="muzyczkaFragment"
+        tools:layout="@layout/activity_muzyka" />
     <fragment
         android:id="@+id/oddechFragment"
         android:name="com.example.covdown.ui.oddech.OddechFragment"

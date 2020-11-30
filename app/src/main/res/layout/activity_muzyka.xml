@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.muzyka.MuzykaFragment"
+    android:background="@drawable/duzy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/muzykaBtn10"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="96dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn9"
+                app:layout_constraintVertical_bias="0.374" />
+
+            <Button
+                android:id="@+id/muzykaBtn9"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn8"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn7"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn5"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn6"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn2"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn3"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn4"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muzykaBtn3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/muzykaBtn1"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="96dp"
+                android:rotationY="360"
+                android:text="Posłuchaj teraz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

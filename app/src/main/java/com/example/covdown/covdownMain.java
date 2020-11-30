@@ -26,7 +26,7 @@ public class covdownMain extends AppCompatActivity {
         aktywnyUzytkownik.setNazwa(user);
         setContentView(R.layout.activity_covdown_main);
         BottomNavigationView navView = findViewById(R.id.BNV);
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.oddechFragment, R.id.dlaCiebieFragment, R.id.doOdblokowaniaFragment).build();
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.oddechFragment, R.id.muzyczkaFragment, R.id.doOdblokowaniaFragment).build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
