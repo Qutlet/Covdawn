@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.oddech.Uspokojsie_poziomy"
+    android:background="@drawable/duzy">
+
+    <Button
+        android:id="@+id/lvl1_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="poziom 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpokoj1"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/lvl2_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poziom 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/lvl1_s"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpokoj1"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/textViewSpokoj1"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:text="Ćwiczenia na uspokojenie"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/lvlback_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <Button
+        android:id="@+id/lvl3_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poziom 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvl1_s"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
+        android:id="@+id/lvl4_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poziom 4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/lvl3_s"
+        app:layout_constraintTop_toBottomOf="@+id/lvl2_s"
+        app:layout_constraintVertical_bias="0.093" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

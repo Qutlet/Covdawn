@@ -16,8 +16,9 @@ import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
 
-public class Rece_poziomy extends AppCompatActivity {
+public class Usta_poziomy extends AppCompatActivity {
     BazaDanych bazaDanych = BazaDanych.get();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,55 +26,55 @@ public class Rece_poziomy extends AppCompatActivity {
         bazaDanych.downloadOwnedItems();
         int poziom = 0;
         poziom = bundle.getInt("poziom");
-        setContentView(R.layout.oddech_fragment_rece);
-        TextView title2 = findViewById(R.id.textViewRece);
-        title2.setText(R.string.recetytul);
-        final ImageView ilustracjaKroku = findViewById(R.id.imageViewRece);
-        final Button krok = findViewById(R.id.buttonRece);
-        final TextView opis = findViewById(R.id.textViewrece3);
+        setContentView(R.layout.oddech_fragment_zasznurowaneusta);
+        TextView title2 = findViewById(R.id.textViewusta);
+        title2.setText(R.string.ustatytul);
+        final ImageView ilustracjaKroku = findViewById(R.id.imageViewusta);
+        final Button krok = findViewById(R.id.buttonusta);
+        final TextView opis = findViewById(R.id.textViewustaopis);
         final Boolean[] lastStep = {false};
         if (poziom == 1) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
-                opis.setText(R.string.receopisk1);
-                krok.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        opis.setText(R.string.receopisk2);
+            ilustracjaKroku.setImageResource(R.drawable.baza);
+            opis.setText(R.string.ustaopisk1);
+            krok.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    opis.setText(R.string.ustaopisk2);
 
-                        krok.setText("Zakoncz");
-                        if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
-                            finish();
-                        }
-                        lastStep[0] = true;
+                    krok.setText("Zakoncz");
+                    if (lastStep[0]) {
+                        bazaDanych.setPoints(1);
+                        finish();
                     }
-                });
+                    lastStep[0] = true;
+                }
+            });
         }
 
         if (poziom == 2) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
-                opis.setText(R.string.rece2opisk1);
-                krok.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        opis.setText(R.string.rece2opisk2);
-                        krok.setText("Zakoncz");
-                        if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
-                            finish();
-                        }
-                        lastStep[0] = true;
+            ilustracjaKroku.setImageResource(R.drawable.baza);
+            opis.setText(R.string.usta2opisk1);
+            krok.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    opis.setText(R.string.usta2opisk2);
+                    krok.setText("Zakoncz");
+                    if (lastStep[0]) {
+                        bazaDanych.setPoints(1);
+                        finish();
                     }
-                });
+                    lastStep[0] = true;
+                }
+            });
         }
 
         if (poziom == 3) {
                 ilustracjaKroku.setImageResource(R.drawable.baza);
-                opis.setText(R.string.rece3opisk1);
+                opis.setText(R.string.butelka3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        opis.setText(R.string.rece3opisk2);
+                        opis.setText(R.string.butelka3opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(1);
@@ -81,32 +82,34 @@ public class Rece_poziomy extends AppCompatActivity {
                         }
                         lastStep[0] = true;
                     }
-                });
+             });
         }
 
         if (poziom == 4) {
                 ilustracjaKroku.setImageResource(R.drawable.baza);
-                opis.setText(R.string.rece4opisk1);
+                opis.setText(R.string.butelka4opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        opis.setText(R.string.rece4opisk2);
+                        opis.setText(R.string.butelka4opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(1);
                             finish();
                         }
                         lastStep[0] = true;
-                    }
+                 }
                 });
+
         }
 
-        ImageButton cofnij = findViewById(R.id.buttonReceBack);
+        ImageButton cofnij = findViewById(R.id.buttonustaback);
         cofnij.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+
     }
 }
