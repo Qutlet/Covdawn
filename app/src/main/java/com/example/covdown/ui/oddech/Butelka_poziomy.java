@@ -37,7 +37,7 @@ public class Butelka_poziomy extends AppCompatActivity {
 
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
@@ -54,7 +54,7 @@ public class Butelka_poziomy extends AppCompatActivity {
                     opis.setText(R.string.butelka2opisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
@@ -71,7 +71,7 @@ public class Butelka_poziomy extends AppCompatActivity {
                     opis.setText(R.string.butelka3opisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
@@ -88,7 +88,7 @@ public class Butelka_poziomy extends AppCompatActivity {
                     opis.setText(R.string.butelka4opisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;

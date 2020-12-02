@@ -37,7 +37,7 @@ public class OddechFragment_uspokujsie extends AppCompatActivity {
                 krok.setText("zakoncz");
                 lastStep[0] = true;
                 if (lastStep[0])
-                    bazaDanych.setPoints(1,com.example.covdown.covdownMain.getUser());
+                    bazaDanych.setPoints(1);
             }
         });
         ImageButton cofnij = findViewById(R.id.buttonusback);

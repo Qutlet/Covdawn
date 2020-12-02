@@ -12,6 +12,7 @@ import java.sql.SQLException;
 public class BazaDanych {
     private static BazaDanych self = new BazaDanych();
     public static BazaDanych get() {return self;}
+    AktywnyUzytkownik user = AktywnyUzytkownik.get();
     Connection connection = null;
 
     public Connection getConnection() {
@@ -98,10 +99,10 @@ public class BazaDanych {
         return true;
     }
 
-    public void setPoints(double value, String user){
+    public void setPoints(double value){
         connect();
         int points =0;
-        String query = "select punkty from Uzytkownicy where nazwa_uzytkownika = '"+user+"'";
+        String query = "select punkty from Uzytkownicy where nazwa_uzytkownika = '"+user.getNazwa()+"'";
         try (PreparedStatement statement = connection.prepareStatement(query)){
             ResultSet resultSet =statement.executeQuery();
             while (resultSet.next()){
@@ -111,7 +112,7 @@ public class BazaDanych {
             System.err.println("Blad pobrania punktow dla uzytkownika");
         }
         value += points;
-        query = "update Uzytkownicy set punkty="+ value +" where nazwa_uzytkownika = '"+user+"'";
+        query = "update Uzytkownicy set punkty="+ value +" where nazwa_uzytkownika = '"+user.getNazwa()+"'";
         try (PreparedStatement statement = connection.prepareStatement(query)){
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -123,7 +124,7 @@ public class BazaDanych {
     public boolean checkPoints(double value){
         connect();
         int points =0;
-        String query = "select punkty from Uzytkownicy where nazwa_uzytkownika = '"+user+"'";
+        String query = "select punkty from Uzytkownicy where nazwa_uzytkownika = '"+user.getNazwa()+"'";
         try (PreparedStatement statement = connection.prepareStatement(query)){
             ResultSet resultSet =statement.executeQuery();
             while (resultSet.next()){
@@ -149,12 +150,12 @@ public class BazaDanych {
         }
     }
 
-    public Itemki downloadOwnedItems(String user){
+    public Itemki downloadOwnedItems(){
         connect();
         Itemki ownedItemArrayList = new Itemki();
         String idle = null;
         StringBuilder help = new StringBuilder();
-        String query = "select itemki from Uzytkownicy where nazwa_uzytkownika = '"+user+"'";
+        String query = "select itemki from Uzytkownicy where nazwa_uzytkownika = '"+user.getNazwa()+"'";
         try (PreparedStatement statement = connection.prepareStatement(query)){
             ResultSet resultSet =statement.executeQuery();
             while (resultSet.next()){

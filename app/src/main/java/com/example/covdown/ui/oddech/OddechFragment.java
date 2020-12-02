@@ -19,8 +19,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
 
     private OddechViewModel mViewModel;
     BazaDanych bazaDanych = BazaDanych.get();
-    AktywnyUzytkownik aktywnyUzytkownik = AktywnyUzytkownik.get();
-    Itemki odblkowoane = bazaDanych.downloadOwnedItems(aktywnyUzytkownik.getNazwa());
+    Itemki odblkowoane = bazaDanych.downloadOwnedItems();
     View view;
 
     public static OddechFragment newInstance() {

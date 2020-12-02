@@ -24,6 +24,7 @@ import java.util.Locale;
 public class RejestracjaActivity extends AppCompatActivity {
 
     BazaDanych bazaDanych = BazaDanych.get();
+    AktywnyUzytkownik user = AktywnyUzytkownik.get();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +43,8 @@ public class RejestracjaActivity extends AppCompatActivity {
                 if (powodzenia){
                     boolean powodzenie =  bazaDanych.addUser(signName.getText().toString(),signPass.getText().toString(),signDate.getText().toString());
                     if (powodzenie){
+                        user.setNazwa(signName.getText().toString());
                         Intent covdawn = new Intent(getApplicationContext(), covdownMain.class);
-                        covdawn.putExtra("user",signName.getText().toString());
                         startActivity(covdawn);
                     }
                 } else {

@@ -13,6 +13,7 @@ import com.example.covdown.covdownMain;
 public class LoginActivity extends AppCompatActivity {
 
     BazaDanych bazaDanych = BazaDanych.get();
+    AktywnyUzytkownik user = AktywnyUzytkownik.get();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 boolean powodzenie = bazaDanych.checkUser(login.getText().toString(),pass.getText().toString());
                 if (powodzenie){
+                    user.setNazwa(login.getText().toString());
                     Intent covdawn = new Intent(getApplicationContext(), covdownMain.class);
-                    covdawn.putExtra("user",login.getText().toString());
                     startActivity(covdawn);
                 }
                 else {

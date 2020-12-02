@@ -11,19 +11,11 @@ import androidx.navigation.ui.NavigationUI;
 
 public class covdownMain extends AppCompatActivity {
 
-    private static String user;
     private AktywnyUzytkownik aktywnyUzytkownik = AktywnyUzytkownik.get();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bundle bundle = getIntent().getExtras();
-        if (bundle == null) {
-            user = null;
-        } else {
-            user = bundle.getString("user");
-        }
-        aktywnyUzytkownik.setNazwa(user);
         setContentView(R.layout.activity_covdown_main);
         BottomNavigationView navView = findViewById(R.id.BNV);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.oddechFragment, R.id.muzyczkaFragment, R.id.doOdblokowaniaFragment).build();
@@ -32,7 +24,4 @@ public class covdownMain extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
-    public static String getUser() {
-        return user;
-    }
 }

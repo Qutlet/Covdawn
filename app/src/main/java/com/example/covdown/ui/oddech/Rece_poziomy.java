@@ -1,14 +1,12 @@
 package com.example.covdown.ui.oddech;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.covdown.R;
 import com.example.covdown.data.BazaDanych;
 
@@ -37,7 +35,7 @@ public class Rece_poziomy extends AppCompatActivity {
 
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
@@ -54,7 +52,7 @@ public class Rece_poziomy extends AppCompatActivity {
                     opis.setText(R.string.rece2opisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
@@ -71,7 +69,7 @@ public class Rece_poziomy extends AppCompatActivity {
                     opis.setText(R.string.rece3opisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
@@ -88,7 +86,7 @@ public class Rece_poziomy extends AppCompatActivity {
                     opis.setText(R.string.rece4opisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1, com.example.covdown.covdownMain.getUser());
+                        bazaDanych.setPoints(1);
                         finish();
                     }
                     lastStep[0] = true;
