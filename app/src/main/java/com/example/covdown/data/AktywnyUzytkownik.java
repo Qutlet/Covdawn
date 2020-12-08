@@ -16,6 +16,10 @@ public class AktywnyUzytkownik {
         return odblokowane;
     }
 
+    public void addItem(String kod){
+        odblokowane.add(new Itemek(kod,true));
+    }
+
     public String getNazwa() {
         return nazwa;
     }

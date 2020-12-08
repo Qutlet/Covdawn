@@ -30,7 +30,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.oddech_fragment, container, false);
-
+        bazaDanych.downloadOwnedItems();
         ImageButton zasznurowaneUsta = view.findViewById(R.id.zasznurowaneUsta);
         ImageButton cwiczeniaZButelka = view.findViewById(R.id.cwiczenieZButelka);
         ImageButton oddechCiezar = view.findViewById(R.id.oddychanieZCiezarem);

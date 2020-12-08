@@ -179,4 +179,29 @@ public class BazaDanych {
         disconnect();
         user.setOdblokowane(ownedItemArrayList);
     }
+
+    public void addItemek(String kod){
+        connect();
+        String items = null;
+        String query = "select itemki from Uzytkownicy where nazwa_uzytkownika = '"+user.getNazwa()+"'";
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            ResultSet resultSet =statement.executeQuery();
+            while (resultSet.next()){
+                items = resultSet.getString(1);
+            }
+        } catch (SQLException e) {
+            System.err.println("Blad pobrania punktow dla uzytkownika");
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(items);
+        stringBuilder.append(kod);
+        stringBuilder.append(";");
+        query = "update Uzytkownicy set itemki="+ stringBuilder.toString() +" where nazwa_uzytkownika = '"+user.getNazwa()+"'";
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            System.err.println("Blad ustawienia punktow dla uzytkownika");
+        }
+        disconnect();
+    }
 }
