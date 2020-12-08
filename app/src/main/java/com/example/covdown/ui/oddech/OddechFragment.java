@@ -1,6 +1,7 @@
 package com.example.covdown.ui.oddech;
 
 import androidx.lifecycle.ViewModelProviders;
+
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -13,7 +14,6 @@ import android.widget.ImageButton;
 import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
-import com.example.covdown.data.Itemki;
 
 public class OddechFragment extends Fragment implements View.OnClickListener {
 
@@ -41,7 +41,6 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
         oddechCiezar.setOnClickListener(this);
         rece.setOnClickListener(this);
         uspokojenie.setOnClickListener(this);
-        System.out.println(user.getOdblokowane().get(0).getKod());
         return view;
     }
 
@@ -64,25 +63,15 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
             startActivity(cwiczenieZButelka);
         }
         if (v.getId() == R.id.oddychanieZCiezarem){
-            //if (odblkowoane.find("C03")) {
                 Intent oddychanieZCiezarem = new Intent(getContext(), OddechFragment_ciezar.class);
                 startActivity(oddychanieZCiezarem);
-           // }else {
-              //  System.out.println("Nie posiadasz tego elementu");
-           // }
         }
         if (v.getId() == R.id.receGoraDol){
-//            System.out.println(odblkowoane.toString());
-//            if (odblkowoane.find("C02")){
                 Intent receGoraDol = new Intent(getContext(),OddechFragment_rece.class);
                 startActivity(receGoraDol);
-//            } else {
-//                System.out.println("Nie posiadasz tego elementu");
-//            }
-
-        }
+            }
         if (v.getId() == R.id.uspokajajace){
-            Intent uspokajajace = new Intent(getContext(),OddechFragment_uspokujsie.class);
+            Intent uspokajajace = new Intent(getContext(), OddechFragment_uspokojsie.class);
             startActivity(uspokajajace);
         }
     }

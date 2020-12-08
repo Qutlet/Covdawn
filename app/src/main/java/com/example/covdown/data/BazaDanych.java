@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLData;
 import java.sql.SQLException;
+import com.example.covdown.data.AktywnyUzytkownik;
 
 public class BazaDanych {
     private static BazaDanych self = new BazaDanych();
