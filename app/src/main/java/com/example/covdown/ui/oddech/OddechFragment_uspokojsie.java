@@ -1,6 +1,5 @@
 package com.example.covdown.ui.oddech;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,44 +18,43 @@ import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
 
-public class OddechFragment_butelka extends AppCompatActivity {
+public class OddechFragment_uspokojsie extends AppCompatActivity {
     BazaDanych bazaDanych = BazaDanych.get();
     AktywnyUzytkownik user = AktywnyUzytkownik.get();
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.poziomy_butelka);
+        setContentView(R.layout.uspokojsie_poziomy);
         bazaDanych.downloadOwnedItems();
-        TextView title = findViewById(R.id.textViewButleka2);
-        title.setText(R.string.butelkatytul);
-        Button lvl1 = findViewById(R.id.lvl1_b);
+        TextView title = findViewById(R.id.textViewSpokoj1);
+        title.setText(R.string.uspokojsietytul);
+        Button lvl1 = findViewById(R.id.lvl1_s);
         lvl1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cwicznenie = new Intent(getApplicationContext(), Butelka_poziomy.class);
+                Intent cwicznenie = new Intent(getApplicationContext(), Uspokojsie_poziomy.class);
                 cwicznenie.putExtra("poziom",1);
                 startActivity(cwicznenie);
             }
 
         });
-        Button lvl2 = findViewById(R.id.lvl2_b);
+        Button lvl2 = findViewById(R.id.lvl2_s);
         lvl2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (user.getOdblokowane().find("C2P2")) {
-                    Intent cwicznenie = new Intent(getApplicationContext(), Butelka_poziomy.class);
+                if (user.getOdblokowane().find("C5P2")) {
+                    Intent cwicznenie = new Intent(getApplicationContext(), Uspokojsie_poziomy.class);
                     cwicznenie.putExtra("poziom", 2);
                     startActivity(cwicznenie);
                 } else {
-                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_butelka.this).create();
+                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_uspokojsie.this).create();
                     alertDialog.setTitle("Alert");
                     alertDialog.setMessage("Czy chcesz odblokować poziom 2?");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tak",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        //BazaDanych.addItem(C2P2);
+                                        //BazaDanych.addItem(C5P3);
                                         //BazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 2",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -76,23 +74,23 @@ public class OddechFragment_butelka extends AppCompatActivity {
                 }
             }
 
-        }); Button lvl3 = findViewById(R.id.lvl3_b);
+        }); Button lvl3 = findViewById(R.id.lvl3_s);
         lvl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (user.getOdblokowane().find("C2P3")) {
-                    Intent cwicznenie = new Intent(getApplicationContext(), Butelka_poziomy.class);
+                if (user.getOdblokowane().find("C5P3")) {
+                    Intent cwicznenie = new Intent(getApplicationContext(), Uspokojsie_poziomy.class);
                     cwicznenie.putExtra("poziom", 3);
                     startActivity(cwicznenie);
                 } else {
-                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_butelka.this).create();
+                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_uspokojsie.this).create();
                     alertDialog.setTitle("Alert");
                     alertDialog.setMessage("Czy chcesz odblokować poziom 3?");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tak",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        //BazaDanych.addItem(C2P3);
+                                        //BazaDanych.addItem(C5P3);
                                         //BazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 3",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -112,23 +110,23 @@ public class OddechFragment_butelka extends AppCompatActivity {
                 }
             }
 
-        }); Button lvl4 = findViewById(R.id.lvl4_b);
+        }); Button lvl4 = findViewById(R.id.lvl4_s);
         lvl4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (user.getOdblokowane().find("C2P4")) {
-                    Intent cwicznenie = new Intent(getApplicationContext(), Butelka_poziomy.class);
+                if (user.getOdblokowane().find("C5P4")) {
+                    Intent cwicznenie = new Intent(getApplicationContext(), Uspokojsie_poziomy.class);
                     cwicznenie.putExtra("poziom", 4);
                     startActivity(cwicznenie);
                 } else {
-                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_butelka.this).create();
+                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_uspokojsie.this).create();
                     alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Czy chcesz odblokować poziom 4?");
+                    alertDialog.setMessage("Czy chcesz odblokować poziom 2?");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tak",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        //BazaDanych.addItem(C2P4);
+                                        //BazaDanych.addItem(C5P4);
                                         //BazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 4",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -149,7 +147,7 @@ public class OddechFragment_butelka extends AppCompatActivity {
             }
 
         });
-        ImageButton cofnij = findViewById(R.id.lvlback_b);
+        ImageButton cofnij = findViewById(R.id.lvlback_s);
         cofnij.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { finish(); }});

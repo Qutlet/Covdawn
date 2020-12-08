@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLData;
 import java.sql.SQLException;
+import com.example.covdown.data.AktywnyUzytkownik;
 
 public class BazaDanych {
     private static BazaDanych self = new BazaDanych();
@@ -150,7 +151,7 @@ public class BazaDanych {
         }
     }
 
-    public Itemki downloadOwnedItems(){
+    public void downloadOwnedItems(){
         connect();
         Itemki ownedItemArrayList = new Itemki();
         String idle = null;
@@ -176,6 +177,6 @@ public class BazaDanych {
             disconnect();
         }
         disconnect();
-        return ownedItemArrayList;
+        user.setOdblokowane(ownedItemArrayList);
     }
 }

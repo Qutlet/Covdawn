@@ -6,16 +6,23 @@
     <string name="title_muzyczka">Muzyczka</string>
     <string name="title_cwieczenia">Cwiczenia</string>
     <string name="title_wiecej">Wiecej</string>
+
     <string name="ustatytul">Zaszyte usta</string>
     <string name="ustaopisk1">Powoli wciągnij powietrze przez nos, aż do całkowitego napełnienia płuc.</string>
     <string name="ustaopisk2">Miarowo wypuść powietrze przez zwiężone usta.</string>
+    <string name="usta2opisk1">  </string>
+    <string name="usta3opisk1">  </string>
+    <string name="usta2opisk2">  </string>
+    <string name="usta3opisk2">  </string>
+    <string name="usta4opisk1">  </string>
+    <string name="usta4opisk2">  </string>
 
     <string name="butelkatytul">Ćwiczenie różne</string>
     <string name="butelkaopisk1">Weź długą słomkę i butelkę napełnioną do połowy wodą i postaw ją przed sobą na stole.</string>
     <string name="butelkaopisk2">Wdmuchuj powietrze przez słomkę jak najdłużej możesz.</string>
     <string name="butelka2opisk1">  </string>
-    <string name="butelka2opisk2">  </string>
     <string name="butelka3opisk1">  </string>
+    <string name="butelka2opisk2">  </string>
     <string name="butelka3opisk2">  </string>
     <string name="butelka4opisk1">  </string>
     <string name="butelka4opisk2">  </string>
@@ -43,6 +50,13 @@
     <string name="uspokojsietytul">Ćwiczenie na uspokojenie</string>
     <string name="uspokojsieopisk1">Usiądź swobonie, weź powoli glęboki wdech nosem i policz do pięciu.</string>
     <string name="uspokojsieopisk2">Wypuść powietrze ustami. Powtórz wdech i wydech 7 razy.</string>
+    <string name="uspokojsie2opisk1">  </string>
+    <string name="uspokojsie3opisk1">  </string>
+    <string name="uspokojsie2opisk2">  </string>
+    <string name="uspokojsie3opisk2">  </string>
+    <string name="uspokojsie4opisk1">  </string>
+    <string name="uspokojsie4opisk2">  </string>
+
     <string name="nastepny_krok">Nastepny Krok</string>
     <string name="podano_bledne_dane_logowania">Podano bledne dane logowania.
                                                 Spróbuj ponownie!</string>
