@@ -19,7 +19,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
 
     private OddechViewModel mViewModel;
     BazaDanych bazaDanych = BazaDanych.get();
-    Itemki odblkowoane = bazaDanych.downloadOwnedItems();
+    AktywnyUzytkownik user = AktywnyUzytkownik.get();
     View view;
 
     public static OddechFragment newInstance() {
@@ -30,7 +30,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.oddech_fragment, container, false);
-
+        bazaDanych.downloadOwnedItems();
         ImageButton zasznurowaneUsta = view.findViewById(R.id.zasznurowaneUsta);
         ImageButton cwiczeniaZButelka = view.findViewById(R.id.cwiczenieZButelka);
         ImageButton oddechCiezar = view.findViewById(R.id.oddychanieZCiezarem);
@@ -41,7 +41,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
         oddechCiezar.setOnClickListener(this);
         rece.setOnClickListener(this);
         uspokojenie.setOnClickListener(this);
-        System.out.println(odblkowoane.get(0).getKod());
+        System.out.println(user.getOdblokowane().get(0).getKod());
         return view;
     }
 
@@ -72,13 +72,13 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
            // }
         }
         if (v.getId() == R.id.receGoraDol){
-            System.out.println(odblkowoane.toString());
-            if (odblkowoane.find("C02")){
+//            System.out.println(odblkowoane.toString());
+//            if (odblkowoane.find("C02")){
                 Intent receGoraDol = new Intent(getContext(),OddechFragment_rece.class);
                 startActivity(receGoraDol);
-            } else {
-                System.out.println("Nie posiadasz tego elementu");
-            }
+//            } else {
+//                System.out.println("Nie posiadasz tego elementu");
+//            }
 
         }
         if (v.getId() == R.id.uspokajajace){
