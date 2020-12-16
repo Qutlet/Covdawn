@@ -42,7 +42,7 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
 
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1);
+                        bazaDanych.setPoints(5);
                         finish();
                     }
                     lastStep[0] = true;
@@ -59,7 +59,7 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
                         opis.setText(R.string.uspokojsie2opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
+                            bazaDanych.setPoints(5);
                             finish();
                         }
                         lastStep[0] = true;
@@ -76,7 +76,7 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
                         opis.setText(R.string.uspokojsie3opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
+                            bazaDanych.setPoints(7);
                             finish();
                         }
                         lastStep[0] = true;
@@ -93,7 +93,7 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
                         opis.setText(R.string.uspokojsie4opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
+                            bazaDanych.setPoints(10);
                             finish();
                         }
                         lastStep[0] = true;
