@@ -1,14 +1,13 @@
 package com.example.covdown.data;
 
 import android.os.StrictMode;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLData;
 import java.sql.SQLException;
-import com.example.covdown.data.AktywnyUzytkownik;
 
 public class BazaDanych {
     private static BazaDanych self = new BazaDanych();
