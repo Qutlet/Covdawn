@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.example.covdown.R;
-import com.example.covdown.covdownMain;
+import com.example.covdown.CovdownMain;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 boolean powodzenie = bazaDanych.checkUser(login.getText().toString(),pass.getText().toString());
                 if (powodzenie){
                     user.setNazwa(login.getText().toString());
-                    Intent covdawn = new Intent(getApplicationContext(), covdownMain.class);
+                    Intent covdawn = new Intent(getApplicationContext(), CovdownMain.class);
                     startActivity(covdawn);
                 }
                 else {

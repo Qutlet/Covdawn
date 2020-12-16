@@ -1,7 +1,6 @@
 package com.example.covdown.data;
 
 public class AktywnyUzytkownik {
-    BazaDanych bazaDanych = BazaDanych.get();
     private String nazwa;
 
     private static AktywnyUzytkownik self = new AktywnyUzytkownik();
@@ -27,4 +26,5 @@ public class AktywnyUzytkownik {
     public void setNazwa(String nazwa) {
         this.nazwa = nazwa;
     }
+
 }

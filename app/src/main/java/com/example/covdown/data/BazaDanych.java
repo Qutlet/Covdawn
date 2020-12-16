@@ -117,7 +117,7 @@ public class BazaDanych {
         try (PreparedStatement statement = connection.prepareStatement(query)){
             statement.executeUpdate();
         } catch (SQLException e) {
-            System.err.println("Blad ustawienia punktow dla uzytkownika");
+            e.printStackTrace();
         }
         disconnect();
     }
@@ -196,7 +196,7 @@ public class BazaDanych {
         stringBuilder.append(items);
         stringBuilder.append(kod);
         stringBuilder.append(";");
-        query = "update Uzytkownicy set itemki="+ stringBuilder.toString() +" where nazwa_uzytkownika = '"+user.getNazwa()+"'";
+        query = "update Uzytkownicy set itemki='"+ stringBuilder.toString() +"' where nazwa_uzytkownika = '"+user.getNazwa()+"'";
         try (PreparedStatement statement = connection.prepareStatement(query)){
             statement.executeUpdate();
         } catch (SQLException e) {
