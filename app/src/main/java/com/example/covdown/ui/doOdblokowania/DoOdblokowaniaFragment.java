@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.covdown.CovdownMain;
+import com.example.covdown.MainActivity;
 import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
@@ -36,20 +38,28 @@ public class DoOdblokowaniaFragment extends Fragment {
         bazaDanych.downloadOwnedItems();
         View root = inflater.inflate(R.layout.do_odblokowania_fragment, container, false);
         ImageButton ikon01 = root.findViewById(R.id.ikony01);
+        final ImageButton ikona = root.findViewById(R.id.activeUserIcon);
+        ikona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //intent panel usera
+            }
+        });
         ikon01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                if (user.getOdblokowane().find("I01")){
-                   //zmienic ikone usera
+                   ikona.setImageResource(R.drawable.i01);
                } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(0)){
                                         user.addItem("I01");
+                                        bazaDanych.addItemek("I01");
                                         bazaDanych.setPoints(0);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -74,16 +84,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I02")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i02);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(5)){
                                         user.addItem("I02");
+                                        bazaDanych.addItemek("I02");
                                         bazaDanych.setPoints(-5);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -108,16 +119,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I03")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i03);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(10)){
                                         user.addItem("I03");
+                                        bazaDanych.addItemek("I03");
                                         bazaDanych.setPoints(-10);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -142,16 +154,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I04")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i04);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(15)){
                                         user.addItem("I04");
+                                        bazaDanych.addItemek("I04");
                                         bazaDanych.setPoints(-15);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -176,16 +189,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I05")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i05);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(20)){
                                         user.addItem("I05");
+                                        bazaDanych.addItemek("I05");
                                         bazaDanych.setPoints(-20);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -210,16 +224,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I06")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i06);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(25)){
                                         user.addItem("I06");
+                                        bazaDanych.addItemek("I06");
                                         bazaDanych.setPoints(-25);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -244,16 +259,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I07")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i07);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(30)){
                                         user.addItem("I07");
+                                        bazaDanych.addItemek("I07");
                                         bazaDanych.setPoints(-30);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -278,16 +294,17 @@ public class DoOdblokowaniaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I08")){
-                    //zmienic ikone usera
+                    ikona.setImageResource(R.drawable.i08);
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować tą ikonę");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(35)){
                                         user.addItem("I08");
+                                        bazaDanych.addItemek("I08");
                                         bazaDanych.setPoints(-35);
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -315,13 +332,14 @@ public class DoOdblokowaniaFragment extends Fragment {
                     //zmienic tlo
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować to tło");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(0)){
                                         user.addItem("T01");
+                                        bazaDanych.addItemek("T01");
                                         bazaDanych.setPoints(0);
                                         Toast.makeText(getContext(),"Odblokowano tlo",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -349,13 +367,14 @@ public class DoOdblokowaniaFragment extends Fragment {
                     //zmienic tlo
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować to tło");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(10)){
                                         user.addItem("T02");
+                                        bazaDanych.addItemek("T02");
                                         bazaDanych.setPoints(-10);
                                         Toast.makeText(getContext(),"Odblokowano tlo",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -383,13 +402,14 @@ public class DoOdblokowaniaFragment extends Fragment {
                     //zmienic tlo
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować to tło");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(20)){
                                         user.addItem("T03");
+                                        bazaDanych.addItemek("T03");
                                         bazaDanych.setPoints(-20);
                                         Toast.makeText(getContext(),"Odblokowano tlo",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -417,13 +437,14 @@ public class DoOdblokowaniaFragment extends Fragment {
                     //zmienic tlo
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
+                    alertDialog.setTitle("Nie posiadany element");
+                    alertDialog.setMessage("Czy chcesz odblokować to tło");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (bazaDanych.checkPoints(40)){
                                         user.addItem("T04");
+                                        bazaDanych.addItemek("T04");
                                         bazaDanych.setPoints(-40);
                                         Toast.makeText(getContext(),"Odblokowano tlo",Toast.LENGTH_SHORT).show();
                                     } else {

@@ -2,7 +2,7 @@ package com.example.covdown.data;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.covdown.R;
-import com.example.covdown.covdownMain;
+import com.example.covdown.CovdownMain;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,13 +13,7 @@ import android.widget.TextView;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.Date;
-import java.util.Locale;
 
 public class RejestracjaActivity extends AppCompatActivity {
 
@@ -44,7 +38,7 @@ public class RejestracjaActivity extends AppCompatActivity {
                     boolean powodzenie =  bazaDanych.addUser(signName.getText().toString(),signPass.getText().toString(),signDate.getText().toString());
                     if (powodzenie){
                         user.setNazwa(signName.getText().toString());
-                        Intent covdawn = new Intent(getApplicationContext(), covdownMain.class);
+                        Intent covdawn = new Intent(getApplicationContext(), CovdownMain.class);
                         startActivity(covdawn);
                     }
                 } else {
