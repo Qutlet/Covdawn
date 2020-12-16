@@ -41,7 +41,7 @@ public class Ciezar_poziomy extends AppCompatActivity {
                     opis.setText(R.string.ciezaropisk2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
-                        bazaDanych.setPoints(1);
+                        bazaDanych.setPoints(5);
                         finish();
                     }
                     lastStep[0] = true;
@@ -58,7 +58,7 @@ public class Ciezar_poziomy extends AppCompatActivity {
                         opis.setText(R.string.ciezar2opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
+                            bazaDanych.setPoints(5);
                             finish();
                         }
                         lastStep[0] = true;
@@ -75,7 +75,7 @@ public class Ciezar_poziomy extends AppCompatActivity {
                         opis.setText(R.string.ciezar3opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
+                            bazaDanych.setPoints(7);
                             finish();
                         }
                         lastStep[0] = true;
@@ -92,7 +92,7 @@ public class Ciezar_poziomy extends AppCompatActivity {
                         opis.setText(R.string.ciezar4opisk2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
-                            bazaDanych.setPoints(1);
+                            bazaDanych.setPoints(10);
                             finish();
                         }
                         lastStep[0] = true;

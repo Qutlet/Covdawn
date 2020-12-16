@@ -56,8 +56,9 @@ public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        //BazaDanych.addItem(C4P3);
-                                        //BazaDanych.setPoints(-10);
+                                        user.addItem("C4P2");
+                                        bazaDanych.addItemek("C4P2");
+                                        bazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 2",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getApplicationContext(),"Nie masz wystraczająco dużo punktów",Toast.LENGTH_SHORT).show();
@@ -92,8 +93,9 @@ public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        //BazaDanych.addItem(C4P3);
-                                        //BazaDanych.setPoints(-10);
+                                        user.addItem("C4P3");
+                                        bazaDanych.addItemek("C4P3");
+                                        bazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 3",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getApplicationContext(),"Nie masz wystraczająco dużo punktów",Toast.LENGTH_SHORT).show();
@@ -128,8 +130,9 @@ public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        //BazaDanych.addItem(C4P4);
-                                        //BazaDanych.setPoints(-10);
+                                        user.addItem("C4P4");
+                                        bazaDanych.addItemek("C4P4");
+                                        bazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 4",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getApplicationContext(),"Nie masz wystraczająco dużo punktów",Toast.LENGTH_SHORT).show();
