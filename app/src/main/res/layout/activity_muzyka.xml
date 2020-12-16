@@ -173,6 +173,109 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="96dp"
+                android:text="Polskie hity 2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="194dp"
+                android:text="Najlepsze utwory Indie 2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="294dp"
+                android:text="Alternatywna Polska 2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="392dp"
+                android:text="Najlepsze utwory Afropop 2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="490dp"
+                android:text="Najlepsze utwory Pop 2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="588dp"
+                android:text="Najlepsze utwory RnB 2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/title7"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="686dp"
+                android:text="Polski Hip Hop klasyki"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="784dp"
+                android:text="Zimowy chill"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/title9"
+                android:layout_width="203dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="882dp"
+                android:text="Polskie hity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </FrameLayout>
