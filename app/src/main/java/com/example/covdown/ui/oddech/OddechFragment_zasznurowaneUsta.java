@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
+import com.example.covdown.ui.userPanel.UserPanel;
 
 public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
     BazaDanych bazaDanych = BazaDanych.get();
@@ -27,8 +28,19 @@ public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.usta_poziomy);
+        ImageButton ikona = findViewById(R.id.activeUserIcon);
+        ikona.setImageResource(user.setIconImage());
+        TextView punkty = findViewById(R.id.textView2);
+        punkty.setText(String.valueOf(bazaDanych.getPoints()));
         TextView title = findViewById(R.id.textViewUsta1);
         bazaDanych.downloadOwnedItems();
+        ikona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent userPanel = new Intent(getApplicationContext(), UserPanel.class);
+                startActivity(userPanel);
+            }
+        });
         title.setText(R.string.ustatytul);
         Button lvl1 = findViewById(R.id.lvl1_u);
         lvl1.setOnClickListener(new View.OnClickListener() {

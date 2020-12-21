@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 boolean powodzenie = bazaDanych.checkUser(login.getText().toString(),pass.getText().toString());
                 if (powodzenie){
                     user.setNazwa(login.getText().toString());
+                    bazaDanych.getIconID();
                     Intent covdawn = new Intent(getApplicationContext(), CovdownMain.class);
                     startActivity(covdawn);
                 }

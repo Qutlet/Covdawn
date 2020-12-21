@@ -1,9 +1,11 @@
 package com.example.covdown.ui.doOdblokowania;
 
+import androidx.annotation.IntegerRes;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.covdown.CovdownMain;
@@ -21,6 +24,7 @@ import com.example.covdown.MainActivity;
 import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
+import com.example.covdown.ui.userPanel.UserPanel;
 
 public class DoOdblokowaniaFragment extends Fragment {
 
@@ -38,18 +42,15 @@ public class DoOdblokowaniaFragment extends Fragment {
         bazaDanych.downloadOwnedItems();
         View root = inflater.inflate(R.layout.do_odblokowania_fragment, container, false);
         ImageButton ikon01 = root.findViewById(R.id.ikony01);
-        final ImageButton ikona = root.findViewById(R.id.activeUserIcon);
-        ikona.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //intent panel usera
-            }
-        });
+        final ImageButton ikona = getActivity().findViewById(R.id.activeUserIcon);
+        final TextView punkty = getActivity().findViewById(R.id.textView2);
         ikon01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                if (user.getOdblokowane().find("I01")){
                    ikona.setImageResource(R.drawable.i01);
+                   user.setIconID("I01");
+                   bazaDanych.setIconID("I01");
                } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -61,6 +62,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I01");
                                         bazaDanych.addItemek("I01");
                                         bazaDanych.setPoints(0);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -85,6 +87,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I02")){
                     ikona.setImageResource(R.drawable.i02);
+                    user.setIconID("I02");
+                    bazaDanych.setIconID("I02");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -96,6 +100,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I02");
                                         bazaDanych.addItemek("I02");
                                         bazaDanych.setPoints(-5);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -120,6 +125,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I03")){
                     ikona.setImageResource(R.drawable.i03);
+                    user.setIconID("I03");
+                    bazaDanych.setIconID("I03");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -131,6 +138,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I03");
                                         bazaDanych.addItemek("I03");
                                         bazaDanych.setPoints(-10);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -155,6 +163,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I04")){
                     ikona.setImageResource(R.drawable.i04);
+                    user.setIconID("I04");
+                    bazaDanych.setIconID("I04");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -166,6 +176,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I04");
                                         bazaDanych.addItemek("I04");
                                         bazaDanych.setPoints(-15);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -190,6 +201,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I05")){
                     ikona.setImageResource(R.drawable.i05);
+                    user.setIconID("I05");
+                    bazaDanych.setIconID("I05");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -201,6 +214,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I05");
                                         bazaDanych.addItemek("I05");
                                         bazaDanych.setPoints(-20);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -225,6 +239,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I06")){
                     ikona.setImageResource(R.drawable.i06);
+                    user.setIconID("I06");
+                    bazaDanych.setIconID("I06");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -236,6 +252,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I06");
                                         bazaDanych.addItemek("I06");
                                         bazaDanych.setPoints(-25);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -260,6 +277,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I07")){
                     ikona.setImageResource(R.drawable.i07);
+                    user.setIconID("I07");
+                    bazaDanych.setIconID("I06");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -271,6 +290,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I07");
                                         bazaDanych.addItemek("I07");
                                         bazaDanych.setPoints(-30);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();
@@ -295,6 +315,8 @@ public class DoOdblokowaniaFragment extends Fragment {
             public void onClick(View v) {
                 if (user.getOdblokowane().find("I08")){
                     ikona.setImageResource(R.drawable.i08);
+                    user.setIconID("I08");
+                    bazaDanych.setIconID("I08");
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
                     alertDialog.setTitle("Nie posiadany element");
@@ -306,6 +328,7 @@ public class DoOdblokowaniaFragment extends Fragment {
                                         user.addItem("I08");
                                         bazaDanych.addItemek("I08");
                                         bazaDanych.setPoints(-35);
+                                        punkty.setText(String.valueOf(bazaDanych.getPoints()));
                                         Toast.makeText(getContext(),"Odblokowano ikone",Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(),"Nie stac Cie biedaku na te ikone",Toast.LENGTH_SHORT).show();

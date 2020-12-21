@@ -3,7 +3,9 @@ package com.example.covdown.ui.oddech;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,17 +17,34 @@ import android.widget.Toast;
 import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
+import com.example.covdown.ui.userPanel.UserPanel;
 
 public class Butelka_poziomy extends AppCompatActivity {
     BazaDanych bazaDanych = BazaDanych.get();
+    AktywnyUzytkownik user = AktywnyUzytkownik.get();
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         bazaDanych.downloadOwnedItems();
+
+        System.out.println(user.setIconImage());
         int poziom = 0;
         poziom = bundle.getInt("poziom");
         setContentView(R.layout.oddech_fragment_butelka);
+
+        ImageButton ikona = findViewById(R.id.activeUserIcon);
+        ikona.setImageResource(user.setIconImage());
+        ikona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent userPanel = new Intent(getApplicationContext(), UserPanel.class);
+                startActivity(userPanel);
+            }
+        });
+        TextView punkty = findViewById(R.id.textView2);
+        punkty.setText(String.valueOf(bazaDanych.getPoints()));
         TextView title2 = findViewById(R.id.textViewButleka1);
         title2.setText(R.string.butelkatytul);
         final ImageView ilustracjaKroku = findViewById(R.id.imageViewButlka);

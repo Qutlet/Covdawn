@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.covdown.R;
 import com.example.covdown.data.AktywnyUzytkownik;
 import com.example.covdown.data.BazaDanych;
+import com.example.covdown.ui.userPanel.UserPanel;
 
 public class OddechFragment_butelka extends AppCompatActivity {
     BazaDanych bazaDanych = BazaDanych.get();
@@ -27,7 +28,18 @@ public class OddechFragment_butelka extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.poziomy_butelka);
+        ImageButton ikona = findViewById(R.id.activeUserIcon);
+        ikona.setImageResource(user.setIconImage());
+        TextView punkty = findViewById(R.id.textView2);
+        punkty.setText(String.valueOf(bazaDanych.getPoints()));
         bazaDanych.downloadOwnedItems();
+        ikona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent userPanel = new Intent(getApplicationContext(), UserPanel.class);
+                startActivity(userPanel);
+            }
+        });
         TextView title = findViewById(R.id.textViewButleka2);
         title.setText(R.string.butelkatytul);
         Button lvl1 = findViewById(R.id.lvl1_b);

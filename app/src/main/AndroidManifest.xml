@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.oddech.Uspokojsie_poziomy"></activity>
+        <activity android:name=".ui.userPanel.UserPanel"></activity>
+        <activity android:name=".ui.oddech.Uspokojsie_poziomy" />
         <activity android:name=".ui.oddech.Usta_poziomy" />
         <activity android:name=".ui.oddech.Butelka_poziomy" />
         <activity android:name=".ui.oddech.Rece_poziomy" />

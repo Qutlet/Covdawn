@@ -203,4 +203,47 @@ public class BazaDanych {
         }
         disconnect();
     }
+
+    public void getIconID(){
+        connect();
+        String icon ="I01";
+        String query = "select ikona from Uzytkownicy where nazwa_uzytkownika = '"+user.getNazwa()+"'";
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            ResultSet resultSet =statement.executeQuery();
+            while (resultSet.next()){
+                icon = resultSet.getString(1);
+            }
+        } catch (SQLException e) {
+            System.err.println("Blad pobrania ikony dla uzytkownika");
+        }
+        disconnect();
+        user.setIconID(icon);
+    }
+
+    public void setIconID(String iconID){
+        connect();
+        String query = "update Uzytkownicy set ikona='"+ iconID +"' where nazwa_uzytkownika = '"+user.getNazwa()+"'";
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        disconnect();
+    }
+
+    public int getPoints(){
+        connect();
+        int ptk = 0;
+        String query = "select punkty from Uzytkownicy where nazwa_uzytkownika = '"+user.getNazwa()+"'";
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            ResultSet resultSet =statement.executeQuery();
+            while (resultSet.next()){
+                ptk = resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            System.err.println("Blad pobrania ikony dla uzytkownika");
+        }
+        disconnect();
+        return ptk;
+    }
 }
