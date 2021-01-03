@@ -64,7 +64,7 @@ public class Ciezar_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 2) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.woreczki);
                 opis.setText(R.string.ciezar2opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -81,7 +81,7 @@ public class Ciezar_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 3) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.ksiazka);
                 opis.setText(R.string.ciezar3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override

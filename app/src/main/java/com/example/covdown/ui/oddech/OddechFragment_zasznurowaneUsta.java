@@ -126,43 +126,6 @@ public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
                 }
             }
 
-        }); Button lvl4 = findViewById(R.id.lvl4_u);
-        lvl4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (user.getOdblokowane().find("C4P4")) {
-                    Intent cwicznenie = new Intent(getApplicationContext(), Usta_poziomy.class);
-                    cwicznenie.putExtra("poziom", 4);
-                    startActivity(cwicznenie);
-                } else {
-                    AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_zasznurowaneUsta.this).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Czy chcesz odblokować poziom 4?");
-                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tak",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    if(bazaDanych.checkPoints(10)){
-                                        user.addItem("C4P4");
-                                        bazaDanych.addItemek("C4P4");
-                                        bazaDanych.setPoints(-10);
-                                        Toast.makeText(getApplicationContext(),"Odblokowano poziom 4",Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(getApplicationContext(),"Nie masz wystraczająco dużo punktów",Toast.LENGTH_SHORT).show();
-                                    }
-                                    dialog.dismiss();
-                                }
-                            });
-                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Anuluj",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    dialog.dismiss();
-                                }
-                            });
-
-                    alertDialog.show();
-                }
-            }
-
         });
         ImageButton cofnij = findViewById(R.id.lvlback_u);
         cofnij.setOnClickListener(new View.OnClickListener() {
