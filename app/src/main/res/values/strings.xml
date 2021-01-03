@@ -8,30 +8,28 @@
     <string name="title_wiecej">Wiecej</string>
 
     <string name="ustatytul">Zaszyte usta</string>
-    <string name="ustaopisk1">Powoli wciągnij powietrze przez nos, aż do całkowitego napełnienia płuc.</string>
-    <string name="ustaopisk2">Miarowo wypuść powietrze przez zwiężone usta.</string>
-    <string name="usta2opisk1">  </string>
-    <string name="usta3opisk1">  </string>
-    <string name="usta2opisk2">  </string>
-    <string name="usta3opisk2">  </string>
-    <string name="usta4opisk1">  </string>
-    <string name="usta4opisk2">  </string>
+    <string name="ustaopisk1">Wdychaj powietrze powoli nosem, aż do całkowitego napełnienia płuc.</string>
+    <string name="ustaopisk2">Wypuść powietrze ustałmi ułożonymi w tzw "dziubek". Powtórz ćwiczenie 3-5 razy.</string>
+    <string name="usta2opisk1">Weź długi powolny wdech nosem (płuca miarowo wypełniają się powietrzem). Odczekaj kilka sekund.</string>
+    <string name="usta2opisk2">Wykonaj długi powolny wydech ustami. Staraj się wydłużać oddachy i powtórz ćwiczenie 3-5 razy.</string>
+    <string name="usta3opisk1">Powoli wciągnij powietrze przez nos, aż do całkowitego napełnienia płuc.</string>
+    <string name="usta3opisk2">Miarowo wypuść powietrze przez zwiężone usta. Powtórz ćwiczenie 3-5 razy.</string>
 
     <string name="butelkatytul">Ćwiczenie różne</string>
     <string name="butelkaopisk1">Weź długą słomkę i butelkę napełnioną do połowy wodą i postaw ją przed sobą na stole.</string>
     <string name="butelkaopisk2">Wdmuchuj powietrze przez słomkę jak najdłużej możesz.</string>
-    <string name="butelka2opisk1">  </string>
-    <string name="butelka3opisk1">  </string>
-    <string name="butelka2opisk2">  </string>
-    <string name="butelka3opisk2">  </string>
-    <string name="butelka4opisk1">  </string>
-    <string name="butelka4opisk2">  </string>
+    <string name="butelka2opisk1">Usiądź wyprostowany na krześle. Połóż dłoń na klatce piersiowej i weź głęboki powolny wdech. Unieś ręke wraz z górną częścią klatki piersiowej.</string>
+    <string name="butelka2opisk2">Wypuść powoli powietrze obniżając ręke wraz z górną częścią klatki piersiowej.</string>
+    <string name="butelka3opisk1">Ułóż dłonie na dolnych żebrach. Weź wdech otwierając klatkę piersiową (kieruj powietrze do dolnej części płuc).</string>
+    <string name="butelka3opisk2">Wypuść powietrze powoli, klatka piersiowa wraca do normalnego stanu.</string>
+    <string name="butelka4opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami wzdłuż tułowia.</string>
+    <string name="butelka4opisk2">Weź wdech, wznieś wyprotowane ręce i połóż je za głową. Następnie wypuść powietrze i opuść ręce.</string>
 
     <string name="ciezartytul">Ćwiczenie z ciężarem</string>
     <string name="ciezaropisk1">Połóż się na podłodze z ugiętymi nogami. Jedną rękę połóż na brzuchu, a drugą na klatce piersiowej.</string>
     <string name="ciezaropisk2">Wykonuj wdech nosem unosząc brzuch do góry, a następnie wydech aktywnie wziągając mięśnie brzucha. Powtórz 3 razy.</string>
-    <string name="ciezar2opisk1">Połóż się nie plecach z ugiętymi nogami i umieść na brzuchu pudełko zapałek zamiast ręki. Drugą rękę połóż na klatce piersiowej.</string>
-    <string name="ciezar2opisk2">Zrób wdech nosem, tak, żeby uniósł się jedynie brzuch z pudełkiem zapałek. Powtórz 3 razy.</string>
+    <string name="ciezar2opisk1">Połóż się na plecach na podłodze. Na górnej części klatki piersiowej połóż np. woreczki z piaskiem, po 3 kg każdy.</string>
+    <string name="ciezar2opisk2">Wykonuj powolne, głębokie wdechy i wydechy. Ćwiczenie powtórz 4–5 razy.</string>
     <string name="ciezar3opisk1">Połóż się nie plecach z ugiętymi nogami i umieść na brzuchu niewielki ciężar, np. książkę.</string>
     <string name="ciezar3opisk2">Zrób wdech nosem, tak,aby książka uniosła się do góry. Powtórz 3 razy.</string>
     <string name="ciezar4opisk1">Połóż się na plecach z rękami skrzyżowanymi za głową i ugiętymi nogami.</string>
@@ -40,22 +38,22 @@
     <string name="recetytul">Ćwiczenie z podnoszeniem rąk</string>
     <string name="receopisk1">Usiądź swobonie na krześle  i opuść ręce swobodnie wzdłuż ciała.</string>
     <string name="receopisk2">Podnieś wyprostowane ręce nad głowę robiąc wdech i opuść je powoli wydmuchując powietrze.</string>
-    <string name="rece2opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami wzdłuż tułowia.</string>
-    <string name="rece2opisk2">Weź wdech i wznieś wyprotowane ręce do góry do pionu, a następnie wypuść powietrze wraz z opuszczeniem rąk.</string>
+    <string name="rece2opisk1">Weź powolny głęboki wdech z odwodzeniem rąk (dłonie skierowane do przodu) złącz łopatki i wypchnij klatkę piersiową.</string>
+    <string name="rece2opisk2">Wypuść powoli powietrze jednocześnie łącząc dłonie przed sobą. Powtórz ćwiczenie 3-5 razy.</string>
     <string name="rece3opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami wzdłuż tułowia.</string>
-    <string name="rece3opisk2">Weź wdech, wznieś wyprotowane ręce i połóż je za głową. Następnie wypuść powietrze i opuść ręce.</string>
+    <string name="rece3opisk2">Weź wdech i wznieś wyprotowane ręce do góry do pionu, a następnie wypuść powietrze wraz z opuszczeniem rąk.</string>
     <string name="rece4opisk1">Połóż się na podłodze z wyprostowanymi nogami i rękami pod kątem 90 stopni.Weź wdech z uwypukleniem klatki piersiowej i brzucha.</string>
     <string name="rece4opisk2">Zrób wydech ze skrętem tułowia w lewo, przenieś prawą rękę przed sobą, aż do zetknięcia z lewą. Przy kolejnym wydechu wykonać skręt w przeciwną stronę.</string>
 
     <string name="uspokojsietytul">Ćwiczenie na uspokojenie</string>
     <string name="uspokojsieopisk1">Usiądź swobonie, weź powoli glęboki wdech nosem i policz do pięciu.</string>
-    <string name="uspokojsieopisk2">Wypuść powietrze ustami. Powtórz wdech i wydech 7 razy.</string>
-    <string name="uspokojsie2opisk1">  </string>
-    <string name="uspokojsie3opisk1">  </string>
-    <string name="uspokojsie2opisk2">  </string>
-    <string name="uspokojsie3opisk2">  </string>
-    <string name="uspokojsie4opisk1">  </string>
-    <string name="uspokojsie4opisk2">  </string>
+    <string name="uspokojsieopisk2">Wypuść powietrze ustami również licząc do 5. Kiedy poczujesz się wygodnie zwiększ długość wdechu i wydechu do 6, a następnie 8. Powtórz wdech i wydech 7 razy.</string>
+    <string name="uspokojsie2opisk1">Weź głęboki powolny wdech i unieś barki do góry.</string>
+    <string name="uspokojsie2opisk2">Wypuść powoli powietrze opuszczając barki. Powtórz ćwiczenie 3-5 razy.</string>
+    <string name="uspokojsie3opisk1">Weź głęboki powolny wdech, podczas którego wyporstuj plecy i ściągnij łopatki.</string>
+    <string name="uspokojsie3opisk2">Wypuść powoli powietrze jednocześnie wypychając placy do tyłu i ściągając barki do przodu (zgarb się). Powtórz ćwiczenie 3-5 razy.</string>
+    <string name="uspokojsie4opisk1">Zacznij w pozycji siedzącej, z wyprostowanym kręgosłupem. Połóż czubek języka na górnym podniebieniu tuż za zębami. Zrób wydech całkowicie przez usta, pamiętaj o języku.</string>
+    <string name="uspokojsie4opisk2">Zrób wdech nosem licząc po cichu od 1 do 4. Zatrzymaj powietrze licząc powoli i pewnie od 1 do 7. Wypuść powietrze ustami licząc od 1 do 8. Powtórz sekwencje cztery razy.</string>
 
     <string name="nastepny_krok">Nastepny Krok</string>
     <string name="podano_bledne_dane_logowania">Podano bledne dane logowania.

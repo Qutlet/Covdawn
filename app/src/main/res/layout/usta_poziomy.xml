@@ -38,25 +38,21 @@
         android:id="@+id/lvl1_u"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="160dp"
         android:text="poziom 1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsta1"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsta1" />
 
     <Button
         android:id="@+id/lvl2_u"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="160dp"
         android:text="Poziom 2"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/lvl1_u"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsta1"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintTop_toBottomOf="@+id/lvl1_u" />
 
     <TextView
         android:id="@+id/textViewUsta1"
@@ -68,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039"
+        app:layout_constraintVertical_bias="0.089"
         tools:textAlignment="center" />
 
     <ImageButton
@@ -87,24 +83,10 @@
         android:id="@+id/lvl3_u"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="160dp"
         android:text="Poziom 3"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lvl1_u"
-        app:layout_constraintVertical_bias="0.091" />
-
-    <Button
-        android:id="@+id/lvl4_u"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Poziom 4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/lvl3_u"
-        app:layout_constraintTop_toBottomOf="@+id/lvl2_u"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toBottomOf="@+id/lvl2_u" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

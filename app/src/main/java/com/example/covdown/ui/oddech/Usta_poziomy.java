@@ -48,13 +48,13 @@ public class Usta_poziomy extends AppCompatActivity {
         final TextView opis = findViewById(R.id.textViewustaopis);
         final Boolean[] lastStep = {false};
         if (poziom == 1) {
-            ilustracjaKroku.setImageResource(R.drawable.baza);
+            ilustracjaKroku.setImageResource(R.drawable.nos);
             opis.setText(R.string.ustaopisk1);
             krok.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opis.setText(R.string.ustaopisk2);
-
+                    ilustracjaKroku.setImageResource(R.drawable.dziubek);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
                         bazaDanych.setPoints(5);
@@ -66,12 +66,13 @@ public class Usta_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 2) {
-            ilustracjaKroku.setImageResource(R.drawable.baza);
+            ilustracjaKroku.setImageResource(R.drawable.nos);
             opis.setText(R.string.usta2opisk1);
             krok.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opis.setText(R.string.usta2opisk2);
+                    ilustracjaKroku.setImageResource(R.drawable.dziubek);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
                         bazaDanych.setPoints(5);
@@ -83,12 +84,13 @@ public class Usta_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 3) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.nos);
                 opis.setText(R.string.butelka3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.butelka3opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.zaszyte);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(7);
@@ -97,24 +99,6 @@ public class Usta_poziomy extends AppCompatActivity {
                         lastStep[0] = true;
                     }
              });
-        }
-
-        if (poziom == 4) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
-                opis.setText(R.string.butelka4opisk1);
-                krok.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        opis.setText(R.string.butelka4opisk2);
-                        krok.setText("Zakoncz");
-                        if (lastStep[0]) {
-                            bazaDanych.setPoints(10);
-                            finish();
-                        }
-                        lastStep[0] = true;
-                 }
-                });
-
         }
 
         ImageButton cofnij = findViewById(R.id.buttonustaback);

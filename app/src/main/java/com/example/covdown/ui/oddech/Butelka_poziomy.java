@@ -52,13 +52,13 @@ public class Butelka_poziomy extends AppCompatActivity {
         final TextView opis = findViewById(R.id.textViewButleka);
         final Boolean[] lastStep = {false};
         if (poziom == 1) {
-            ilustracjaKroku.setImageResource(R.drawable.baza);
+            ilustracjaKroku.setImageResource(R.drawable.butelka);
             opis.setText(R.string.butelkaopisk1);
             krok.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opis.setText(R.string.butelkaopisk2);
-
+                    ilustracjaKroku.setImageResource(R.drawable.dmuchanie_butelka);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
                         bazaDanych.setPoints(5);
@@ -70,7 +70,7 @@ public class Butelka_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 2) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.ręka_na_klatce);
                 opis.setText(R.string.butelka2opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -87,7 +87,7 @@ public class Butelka_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 3) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.klatka);
                 opis.setText(R.string.butelka3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -104,12 +104,13 @@ public class Butelka_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 4) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.lezenie);
                 opis.setText(R.string.butelka4opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.butelka4opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.rece_za_glowa);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(10);
