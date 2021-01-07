@@ -31,6 +31,8 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
         setContentView(R.layout.oddech_fragment_uspokojsie);
         ImageButton ikona = findViewById(R.id.activeUserIcon);
         ikona.setImageResource(user.setIconImage());
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         TextView punkty = findViewById(R.id.textView2);
         punkty.setText(String.valueOf(bazaDanych.getPoints()));
         ikona.setOnClickListener(new View.OnClickListener() {

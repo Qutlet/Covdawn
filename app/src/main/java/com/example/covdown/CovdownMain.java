@@ -24,6 +24,8 @@ public class CovdownMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covdown_main);
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         TextView punkty = findViewById(R.id.textView2);
         punkty.setText(String.valueOf(bazaDanych.getPoints()));
         ImageButton ikona = findViewById(R.id.activeUserIcon);

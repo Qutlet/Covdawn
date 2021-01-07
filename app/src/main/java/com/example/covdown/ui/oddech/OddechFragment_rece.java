@@ -32,6 +32,8 @@ public class OddechFragment_rece extends AppCompatActivity {
         TextView punkty = findViewById(R.id.textView2);
         punkty.setText(String.valueOf(bazaDanych.getPoints()));
         bazaDanych.downloadOwnedItems();
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         ikona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

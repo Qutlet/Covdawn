@@ -33,7 +33,8 @@ public class Butelka_poziomy extends AppCompatActivity {
         int poziom = 0;
         poziom = bundle.getInt("poziom");
         setContentView(R.layout.oddech_fragment_butelka);
-
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         ImageButton ikona = findViewById(R.id.activeUserIcon);
         ikona.setImageResource(user.setIconImage());
         ikona.setOnClickListener(new View.OnClickListener() {
