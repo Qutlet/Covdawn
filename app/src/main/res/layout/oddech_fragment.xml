@@ -5,13 +5,13 @@
     android:id="@+id/oddechBck"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="10dp"
-    android:paddingBottom="60dp"
+    android:paddingTop="20dp"
     tools:context=".ui.oddech.OddechFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="65dp">
 
         <LinearLayout
             android:layout_width="match_parent"

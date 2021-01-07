@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.muzyka.MuzykaFragment"
-    android:background="@drawable/duzy">
+    android:background="@drawable/duzy"
+    android:paddingBottom="65dp"
+    tools:context=".ui.muzyka.MuzykaFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -182,6 +183,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/title4"
                 android:layout_width="203dp"
@@ -193,6 +195,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/title5"
                 android:layout_width="203dp"
@@ -204,6 +207,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/title6"
                 android:layout_width="203dp"
@@ -215,6 +219,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/title7"
                 android:layout_width="203dp"
@@ -226,6 +231,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/title8"
                 android:layout_width="203dp"
@@ -237,6 +243,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/title9"
                 android:layout_width="203dp"
