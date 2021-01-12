@@ -66,8 +66,8 @@ public class OddechFragment_uspokojsie extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(bazaDanych.checkPoints(10)){
-                                        user.addItem("C5P3");
-                                        bazaDanych.addItemek("C5P3");
+                                        user.addItem("C5P2");
+                                        bazaDanych.addItemek("C5P2");
                                         bazaDanych.setPoints(-10);
                                         Toast.makeText(getApplicationContext(),"Odblokowano poziom 2",Toast.LENGTH_SHORT).show();
                                     } else {
@@ -135,7 +135,7 @@ public class OddechFragment_uspokojsie extends AppCompatActivity {
                 } else {
                     AlertDialog alertDialog = new AlertDialog.Builder(OddechFragment_uspokojsie.this).create();
                     alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Czy chcesz odblokować poziom 2?");
+                    alertDialog.setMessage("Czy chcesz odblokować poziom 4?");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tak",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {

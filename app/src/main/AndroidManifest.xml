@@ -50,7 +50,7 @@
             android:name=".ui.oddech.OddechFragment_zasznurowaneUsta"
             android:label="@string/title_activity_covdown_main" />
         <activity
-            android:name=".ui.oddech.OddechFragment_uspokujsie"
+            android:name=".ui.oddech.OddechFragment_uspokojsie"
             android:label="@string/title_activity_covdown_main" />
     </application>
 

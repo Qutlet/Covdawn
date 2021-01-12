@@ -58,7 +58,7 @@ public class Butelka_poziomy extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     opis.setText(R.string.butelkaopisk2);
-                    ilustracjaKroku.setImageResource(R.drawable.dmuchanie_butelka);
+                    ilustracjaKroku.setImageResource(R.drawable.butelka2);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
                         bazaDanych.setPoints(5);
@@ -70,12 +70,13 @@ public class Butelka_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 2) {
-                ilustracjaKroku.setImageResource(R.drawable.ręka_na_klatce);
+                ilustracjaKroku.setImageResource(R.drawable.reka_na_piersi);
                 opis.setText(R.string.butelka2opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.butelka2opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.reka_na_piersi2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(5);
@@ -87,12 +88,13 @@ public class Butelka_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 3) {
-                ilustracjaKroku.setImageResource(R.drawable.klatka);
+                ilustracjaKroku.setImageResource(R.drawable.zebra);
                 opis.setText(R.string.butelka3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.butelka3opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.zebra2);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(7);
@@ -104,13 +106,13 @@ public class Butelka_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 4) {
-                ilustracjaKroku.setImageResource(R.drawable.lezenie);
+                ilustracjaKroku.setImageResource(R.drawable.poloz_sie);
                 opis.setText(R.string.butelka4opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.butelka4opisk2);
-                        ilustracjaKroku.setImageResource(R.drawable.rece_za_glowa);
+                        ilustracjaKroku.setImageResource(R.drawable.lezenie_rece_za_glowa);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(10);
