@@ -65,7 +65,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
             startActivity(cwiczenieZButelka);
         }
         if (v.getId() == R.id.oddychanieZCiezarem){
-                Intent oddychanieZCiezarem = new Intent(getContext(), OddechFragment_ciezar.class);
+                Intent oddychanieZCiezarem = new Intent(getContext(),OddechFragment_ciezar.class);
                 startActivity(oddychanieZCiezarem);
         }
         if (v.getId() == R.id.receGoraDol){
@@ -73,7 +73,7 @@ public class OddechFragment extends Fragment implements View.OnClickListener {
                 startActivity(receGoraDol);
             }
         if (v.getId() == R.id.uspokajajace){
-            Intent uspokajajace = new Intent(getContext(), OddechFragment_uspokojsie.class);
+            Intent uspokajajace = new Intent(getContext(),OddechFragment_uspokojsie.class);
             startActivity(uspokajajace);
         }
     }

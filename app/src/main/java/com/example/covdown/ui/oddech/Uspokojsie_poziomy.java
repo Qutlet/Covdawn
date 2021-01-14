@@ -49,13 +49,13 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
         final TextView opis = findViewById(R.id.textViewus2);
         final Boolean[] lastStep = {false};
         if (poziom == 1) {
-            ilustracjaKroku.setImageResource(R.drawable.baza);
+            ilustracjaKroku.setImageResource(R.drawable.nos);
             opis.setText(R.string.uspokojsieopisk1);
             krok.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opis.setText(R.string.uspokojsieopisk2);
-
+                    ilustracjaKroku.setImageResource(R.drawable.dziubek);
                     krok.setText("Zakoncz");
                     if (lastStep[0]) {
                         bazaDanych.setPoints(5);
@@ -67,12 +67,13 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 2) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.barki_gora);
                 opis.setText(R.string.uspokojsie2opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.uspokojsie2opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.barki_dol);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(5);
@@ -84,12 +85,13 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 3) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.usiadz_prosto);
                 opis.setText(R.string.uspokojsie3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.uspokojsie3opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.zgarb_sie);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(7);
@@ -101,7 +103,7 @@ public class Uspokojsie_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 4) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.usiadz_prosto);
                 opis.setText(R.string.uspokojsie4opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override

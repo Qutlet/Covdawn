@@ -49,13 +49,13 @@ public class Rece_poziomy extends AppCompatActivity {
         final TextView opis = findViewById(R.id.textViewrece3);
         final Boolean[] lastStep = {false};
         if (poziom == 1) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.usiadz_prosto);
                 opis.setText(R.string.receopisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.receopisk2);
-
+                        ilustracjaKroku.setImageResource(R.drawable.puciohenzap);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(5);
@@ -67,12 +67,13 @@ public class Rece_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 2) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.rece_boki);
                 opis.setText(R.string.rece2opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.rece2opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.rece_razem);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(5);
@@ -84,12 +85,13 @@ public class Rece_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 3) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.poloz_sie);
                 opis.setText(R.string.rece3opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.rece3opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.lezenie_rece_gora);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(7);
@@ -101,12 +103,13 @@ public class Rece_poziomy extends AppCompatActivity {
         }
 
         if (poziom == 4) {
-                ilustracjaKroku.setImageResource(R.drawable.baza);
+                ilustracjaKroku.setImageResource(R.drawable.rece_pod_katem_prostym);
                 opis.setText(R.string.rece4opisk1);
                 krok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         opis.setText(R.string.rece4opisk2);
+                        ilustracjaKroku.setImageResource(R.drawable.skret_tulowia);
                         krok.setText("Zakoncz");
                         if (lastStep[0]) {
                             bazaDanych.setPoints(10);
