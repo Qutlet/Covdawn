@@ -1,11 +1,13 @@
 package com.example.covdown.data;
 
-import android.content.Context;
-
 import com.example.covdown.R;
+
+import java.sql.Date;
 
 public class AktywnyUzytkownik {
     private String nazwa;
+    private Date data;
+    private int _ID;
     private String iconID = "I01";
 
     private static AktywnyUzytkownik self = new AktywnyUzytkownik();
@@ -30,6 +32,22 @@ public class AktywnyUzytkownik {
 
     public void setNazwa(String nazwa) {
         this.nazwa = nazwa;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public int get_ID() {
+        return _ID;
+    }
+
+    public void set_ID(Integer _ID) {
+        this._ID = _ID;
     }
 
     public void setIconID(String iconID) {
@@ -69,5 +87,6 @@ public class AktywnyUzytkownik {
         }
         return ID;
     }
+
 
 }

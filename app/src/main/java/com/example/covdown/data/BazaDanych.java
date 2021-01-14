@@ -2,6 +2,8 @@ package com.example.covdown.data;
 
 import android.os.StrictMode;
 
+import androidx.core.view.AccessibilityDelegateCompat;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -60,14 +62,16 @@ public class BazaDanych {
 
     public boolean checkUser(String nazwa, String haslo){ //logowanie
         connect();
-        String query = "select nazwa_uzytkownika,haslo from Uzytkownicy ";
+        String query = "select id_user,data,nazwa_uzytkownika,haslo from Uzytkownicy ";
         try (PreparedStatement stsm = connection.prepareStatement(query)){
             ResultSet resultSet = stsm.executeQuery();
             while (resultSet.next()){
-                String checkedUsername = resultSet.getString(1);
-                String pass = resultSet.getString(2);
+                String checkedUsername = resultSet.getString(3);
+                String pass = resultSet.getString(4);
                 if (pass.equals(haslo) && checkedUsername.equals(nazwa)){
                     disconnect();
+                    user.set_ID(resultSet.getInt(1));
+                    user.setData(resultSet.getDate(2));
                     return true;
                 }
             }
@@ -245,5 +249,16 @@ public class BazaDanych {
         }
         disconnect();
         return ptk;
+    }
+
+    public void deleteUserAcc(){
+        connect();
+        String query = "delete from Uzytkownicy where id_user = "+user.get_ID();
+        try (PreparedStatement statement = connection.prepareStatement(query)){
+            statement.execute();
+        } catch (SQLException e) {
+            System.err.println("Blad pobrania ikony dla uzytkownika");
+        }
+        disconnect();
     }
 }

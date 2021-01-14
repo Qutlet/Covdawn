@@ -31,6 +31,8 @@ public class Usta_poziomy extends AppCompatActivity {
         poziom = bundle.getInt("poziom");
         setContentView(R.layout.oddech_fragment_zasznurowaneusta);
         ImageButton ikona = findViewById(R.id.activeUserIcon);
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         ikona.setImageResource(user.setIconImage());
         TextView punkty = findViewById(R.id.textView2);
         punkty.setText(String.valueOf(bazaDanych.getPoints()));

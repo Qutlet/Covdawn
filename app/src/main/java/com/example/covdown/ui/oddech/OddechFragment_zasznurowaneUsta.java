@@ -34,6 +34,8 @@ public class OddechFragment_zasznurowaneUsta extends AppCompatActivity {
         punkty.setText(String.valueOf(bazaDanych.getPoints()));
         TextView title = findViewById(R.id.textViewUsta1);
         bazaDanych.downloadOwnedItems();
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         ikona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

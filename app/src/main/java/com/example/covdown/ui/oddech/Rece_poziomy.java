@@ -32,6 +32,8 @@ public class Rece_poziomy extends AppCompatActivity {
         ImageButton ikona = findViewById(R.id.activeUserIcon);
         ikona.setImageResource(user.setIconImage());
         TextView punkty = findViewById(R.id.textView2);
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         punkty.setText(String.valueOf(bazaDanych.getPoints()));
         ikona.setOnClickListener(new View.OnClickListener() {
             @Override

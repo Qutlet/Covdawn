@@ -32,6 +32,8 @@ public class OddechFragment_butelka extends AppCompatActivity {
         ikona.setImageResource(user.setIconImage());
         TextView punkty = findViewById(R.id.textView2);
         punkty.setText(String.valueOf(bazaDanych.getPoints()));
+        TextView nazwa = findViewById(R.id.textView);
+        nazwa.setText(user.getNazwa());
         bazaDanych.downloadOwnedItems();
         ikona.setOnClickListener(new View.OnClickListener() {
             @Override
