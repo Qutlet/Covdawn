@@ -69,12 +69,14 @@ public class BazaDanych {
                 String checkedUsername = resultSet.getString(3);
                 String pass = resultSet.getString(4);
                 if (pass.equals(haslo) && checkedUsername.equals(nazwa)){
-                    disconnect();
                     user.set_ID(resultSet.getInt(1));
                     user.setData(resultSet.getDate(2));
+                    disconnect();
+                    //resultSet.close();
                     return true;
                 }
             }
+            //resultSet.close();
             return false;
         } catch (SQLException e){
             e.printStackTrace();

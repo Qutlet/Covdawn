@@ -22,31 +22,36 @@
                 android:id="@+id/zasznurowaneUsta"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_dashboard_black_24dp" />
+                android:background="#00FFFFFF"
+                android:src="@drawable/cw1" />
 
             <ImageButton
                 android:id="@+id/cwiczenieZButelka"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_home_black_24dp" />
+                android:background="#00FFFFFF"
+                android:src="@drawable/cw2" />
 
             <ImageButton
                 android:id="@+id/oddychanieZCiezarem"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_home_black_24dp" />
+                android:background="#00FFFFFF"
+                android:src="@drawable/cw3" />
 
             <ImageButton
                 android:id="@+id/receGoraDol"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_dashboard_black_24dp" />
+                android:background="#00FFFFFF"
+                android:src="@drawable/cw4" />
 
             <ImageButton
                 android:id="@+id/uspokajajace"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_dashboard_black_24dp" />
+                android:background="#00FFFFFF"
+                android:src="@drawable/cw5" />
 
         </LinearLayout>
     </ScrollView>

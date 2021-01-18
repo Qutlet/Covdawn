@@ -33,7 +33,7 @@ public class RejestracjaActivity extends AppCompatActivity {
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean powodzenia = checkDate("dd.MM.yyyy",signDate.getText().toString());
+                boolean powodzenia = checkDate("yyyy-MM-dd",signDate.getText().toString());
                 if (powodzenia){
                     boolean powodzenie =  bazaDanych.addUser(signName.getText().toString(),signPass.getText().toString(),signDate.getText().toString());
                     if (powodzenie){

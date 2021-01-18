@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/muzyczkaFragment"
+        android:icon="@drawable/iconfinder_play_5402446"
         android:title="Muzyczka" />
     <item
         android:id="@+id/oddechFragment"
